@@ -1,0 +1,108 @@
+// imports from other scss files
+@import "dist/example";
+
+// should be used before @use to configure forward -with added abbriviation
+@forward 'src/example'as list-*;
+// uses modules from other files, such as _button.scss
+@use "src/button";
+/* keep in mind that no matter how many times you import a file with @use, it
+ it will only be used once */
+
+// creates vars for entire style sheet
+@at-root {
+    --square: 45px;
+}
+
+// scss variables
+$columns: 6;
+$bool: true;
+
+// creates a for loop
+@for $i from 1 through $columns {
+
+    // creates h1-h6
+    .h-#{$i} {
+        font-size: (100% / $i);
+    }
+}
+
+// creates dictionary
+$stuff: ( // key : value,
+    "hello": orange,
+    "world": purple,
+    "good bye": green);
+
+// cycles threw each item in our dictionary
+@each $stuff,
+$item in $stuff {
+
+    // nests our body tag
+    body {
+
+        // & = the root (in this case &=body.hello)
+        &.#{stuff} {
+            // sets color to item
+            color: $item;
+        }
+    }
+}
+
+// creates while loop
+@while $bool==true {
+
+    // creates if/else statement
+    @if $i < 1 {
+        $bool: false;
+        // returns an error. remember \ can be used to ignore commands
+        @error "Property #{$i} is less than \#1";
+    }
+
+    @else {
+        $bool: true;
+    }
+}
+
+// creates a complex styling function using any scss name identifier and it's vars
+@function sum($numbers...) {
+    $sum: 0;
+
+    @each $number in $numbers {
+        $sum: $sum + $number;
+    }
+
+    // then returns our value
+    @return $sum;
+}
+
+// we then use this value for the width of the macro class
+.macro {
+    width: sum(50px, 30px, 100px);
+}
+
+button {
+    // creates variables for button
+    --var: blue;
+}
+
+// creates class="basic" for all files 
+button.basic {
+    // background-color is now assigned to blue
+    background-color: var(--var);
+}
+
+// creates reused values
+@mixin border {
+    border-radius: 15%;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: red;
+}
+
+button.warning {
+    // adds lines after button.basic
+    @extend button.basic;
+    // redefines --var
+    --var: yellow;
+    // includes our reusable values
+    @include border;
+}
