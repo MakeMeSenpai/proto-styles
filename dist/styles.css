@@ -1,220 +1,265 @@
+/* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
 h6 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
   text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
+  font-kerning: auto;
+  font-family: sans-serif;
   text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
+  text-transform: capitalize;
   text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
-  font-size: 14.83333px;
-  font-weight: 2.83333px;
-  letter-spacing: 0.98333px;
-  text-shadow: #fefefe;
-  text-decoration-color: #a6a6a6;
-  text-emphasis-color: #b22cb2;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: oblique;
+  color: #bb19c7;
+  font-size: 26.5px;
+  font-weight: 14.5px;
+  text-decoration: overline;
+  text-decoration-color: #ffd7ff;
 }
 
 h5 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
   text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
+  font-kerning: auto;
+  font-family: sans-serif;
   text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
+  text-transform: capitalize;
   text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
-  font-size: 15px;
-  font-weight: 3px;
-  letter-spacing: 1.15px;
-  text-shadow: #fefefe;
-  text-decoration-color: #a6a6a6;
-  text-emphasis-color: #b22cb2;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: oblique;
+  color: #bb19c7;
+  font-size: 29px;
+  font-weight: 17px;
+  text-decoration: overline;
+  text-decoration-color: #ffdcff;
 }
 
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
   text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
+  font-kerning: auto;
+  font-family: sans-serif;
   text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
+  text-transform: capitalize;
   text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
-  font-size: 15.25px;
-  font-weight: 3.25px;
-  letter-spacing: 1.4px;
-  text-shadow: #fefefe;
-  text-decoration-color: #a6a6a6;
-  text-emphasis-color: #b22cb2;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: oblique;
+  color: #bb19c7;
+  font-size: 32.75px;
+  font-weight: 20.75px;
+  text-decoration: overline;
+  text-decoration-color: #ffe4ff;
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
   text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
+  font-kerning: auto;
+  font-family: sans-serif;
   text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
+  text-transform: capitalize;
   text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
-  font-size: 15.66667px;
-  font-weight: 3.66667px;
-  letter-spacing: 1.81667px;
-  text-shadow: #fdfdfd;
-  text-decoration-color: #a7a7a7;
-  text-emphasis-color: #b32db3;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: oblique;
+  color: #bb19c7;
+  font-size: 39px;
+  font-weight: 27px;
+  text-decoration: overline;
+  text-decoration-color: #fff0ff;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
   text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
+  font-kerning: auto;
+  font-family: sans-serif;
   text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
+  text-transform: capitalize;
   text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
-  font-size: 16.5px;
-  font-weight: 4.5px;
-  letter-spacing: 2.65px;
-  text-shadow: #fdfdfd;
-  text-decoration-color: #a8a8a8;
-  text-emphasis-color: #b42eb4;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: oblique;
+  color: #bb19c7;
+  font-size: 51.5px;
+  font-weight: 39.5px;
+  text-decoration: overline;
+  text-decoration-color: white;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
   text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
+  font-kerning: auto;
+  font-family: sans-serif;
   text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
+  text-transform: capitalize;
   text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
-  font-size: 19px;
-  font-weight: 7px;
-  letter-spacing: 5.15px;
-  text-shadow: #fafafa;
-  text-decoration-color: #aaaaaa;
-  text-emphasis-color: #b630b6;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: oblique;
+  color: #bb19c7;
+  font-size: 89px;
+  font-weight: 77px;
+  text-decoration: overline;
+  text-decoration-color: white;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-feature-settings: "rand";
-  font-stretch: semi-expanded;
-  font-kerning: auto;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: titling-caps;
-  font-variant-east-asian: simplified;
-  font-synthesis: weight;
-  text-align: left;
-  text-decoration: overline;
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-decoration-style: line-through;
-  text-align-last: auto;
-  text-anchor: start;
-  text-underline-position: below;
-  text-orientation: sideways;
-  text-justify: distribute;
-  text-emphasis-position: left;
-  text-emphasis-style: circle;
+  color: #44e638;
   font-size: 14px;
   font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
   letter-spacing: inherit;
 }
+
+ol {
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  list-style-type: upper-roman;
+  font-size: larger;
+}
+
+ul {
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  list-style-type: circle;
+  font-size: x-large;
+}
+
+strong {
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-weight: bolder;
+  font-size: inherit2px;
+}
+
+em {
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium";
+  font-size: inherit2px;
+  text-decoration: underline;
+}
+
+code {
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  font-family: 'Courier New', Courier, monospace;
+  color: #88ff7c;
+  background-color: #004100;
+  display: inline-block;
+  padding: 1em;
+}
+
+abbr {
+  position: relative;
+}
+
+abbr:hover {
+  text-decoration: none;
+  color: #006800;
+}
+
+a {
+  color: #44e638;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  text-decoration: none;
+  color: #006800;
+}
+
+a:hover {
+  text-decoration: double;
+  color: #88ff7c;
+}
+
+/* Misc. */

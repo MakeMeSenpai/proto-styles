@@ -1,5 +1,3 @@
-/* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
-
 // Fonts 
 $color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
 $headings: 1;
@@ -21,8 +19,7 @@ $headings: 1;
 
 @for $i from 6 through $headings {
     $math: (75/$i);
-
-    h#{$i} {
+    h#{$i}{
         @include typography;
         font-style: oblique;
         color: invert($color);
@@ -99,5 +96,3 @@ a:hover {
     text-decoration: double;
     color: $color + (white - #bb66bb);
 }
-
-/* Misc. */
