@@ -1,6 +1,17 @@
 /* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
+/* Fonts */
+body.dark-mode {
+  color: white;
+  background-color: #461022;
+}
+
+body.light-mode {
+  color: #461022;
+  background-color: white;
+}
+
 h6 {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -13,15 +24,19 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bb19c7;
+  color: #3e7462;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #ffd7ff;
+  text-decoration-color: #fcffff;
+}
+
+h6.title {
+  font-family: 'Franklin Gothic Medium';
 }
 
 h5 {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -34,15 +49,19 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bb19c7;
+  color: #3e7462;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: #ffdcff;
+  text-decoration-color: white;
+}
+
+h5.title {
+  font-family: 'Franklin Gothic Medium';
 }
 
 h4 {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -55,15 +74,19 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bb19c7;
+  color: #3e7462;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: #ffe4ff;
+  text-decoration-color: white;
+}
+
+h4.title {
+  font-family: 'Franklin Gothic Medium';
 }
 
 h3 {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -76,15 +99,19 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bb19c7;
+  color: #3e7462;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
-  text-decoration-color: #fff0ff;
+  text-decoration-color: white;
+}
+
+h3.title {
+  font-family: 'Franklin Gothic Medium';
 }
 
 h2 {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -97,15 +124,19 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bb19c7;
+  color: #3e7462;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
   text-decoration-color: white;
 }
 
+h2.title {
+  font-family: 'Franklin Gothic Medium';
+}
+
 h1 {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -118,15 +149,19 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bb19c7;
+  color: #3e7462;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
   text-decoration-color: white;
 }
 
+h1.title {
+  font-family: 'Franklin Gothic Medium';
+}
+
 p {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -142,7 +177,7 @@ p {
 }
 
 ol {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -159,7 +194,7 @@ ol {
 }
 
 ul {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -176,7 +211,7 @@ ul {
 }
 
 strong {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -193,7 +228,7 @@ strong {
 }
 
 em {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -212,7 +247,7 @@ em {
 }
 
 code {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -225,8 +260,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #88ff7c;
-  background-color: #004100;
+  color: #ffffe1;
+  background-color: #1c0000;
   display: inline-block;
   padding: 1em;
 }
@@ -237,11 +272,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #006800;
+  color: #430d1f;
 }
 
 a {
-  color: #44e638;
+  color: #c18b9d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -254,12 +289,49 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #006800;
+  color: #430d1f;
 }
 
 a:hover {
   text-decoration: double;
-  color: #88ff7c;
+  color: #ffffe1;
 }
 
+/* Button */
+button {
+  color: #c18b9d;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  border-width: 3px;
+  border-color: cyan;
+  color: #3e7462;
+  background-color: #c18bff;
+  padding: 1em;
+}
+
+button.delete {
+  border-color: lightcoral;
+  background-color: #ff8b9d;
+}
+
+button.warning {
+  border-color: lightgoldenrodyellow;
+  background-color: #ffff9d;
+}
+
+button.go {
+  border-color: lightgreen;
+  background-color: #c1ff9d;
+}
+
+/* Shapes */
 /* Misc. */

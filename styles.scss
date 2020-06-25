@@ -1,8 +1,18 @@
 /* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
 
-// Fonts 
 $color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
 $headings: 1;
+
+/* Fonts */
+body.dark-mode {
+    color: $color + #7b7b7b;
+    background-color: $color - #7b7b7b;
+}
+
+body.light-mode {
+    color: $color - #7b7b7b;
+    background-color: $color + #7b7b7b;
+}
 
 @mixin typography {
     color: $color;
@@ -19,6 +29,7 @@ $headings: 1;
     font-variant-east-asian: simplified;
 }
 
+// headings
 @for $i from 6 through $headings {
     $math: (75/$i);
 
@@ -30,6 +41,9 @@ $headings: 1;
         font-weight: 2px + $math;
         text-decoration: overline;
         text-decoration-color: invert($color) + #a5a5a5 + ($math*2);
+        &.title {
+            font-family: 'Franklin Gothic Medium';
+        }
     }
 }
 
@@ -99,5 +113,31 @@ a:hover {
     text-decoration: double;
     color: $color + (white - #bb66bb);
 }
+
+/* Forms */
+button {
+    @include typography;
+    border-width: 3px;
+    border-color: cyan;
+    color: invert($color);
+    background-color: $color + blue;
+    padding: 1em;
+    &.delete {
+        border-color: lightcoral;
+        background-color: $color + red;
+    }
+    &.warning {
+        border-color: lightgoldenrodyellow;
+        background-color: $color + rgb(150, 150, 0);
+    }
+    &.go {
+        border-color: lightgreen;
+        background-color: $color + green;
+    }
+}
+
+
+
+/* Shapes */
 
 /* Misc. */

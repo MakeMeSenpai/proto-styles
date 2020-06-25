@@ -40,7 +40,7 @@ $item in $stuff {
     body {
 
         // & = the root (in this case &=body.hello)
-        &.#{stuff} {
+        &.#{$stuff} {
             // sets color to item
             color: $item;
         }
