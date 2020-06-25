@@ -1,3 +1,51 @@
-@import "partials/fonts", "partials/button", "partials/shapes";
+// Fonts 
 
-/* Misc. */
+$color: blue;
+$headings: 1;
+
+@mixin typography {
+    color: $color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-feature-settings: "rand";
+    font-stretch: semi-expanded;
+    font-kerning: auto;
+    font-variant-numeric: oldstyle-nums;
+    font-variant-caps: titling-caps;
+    font-variant-east-asian: simplified;
+    font-synthesis: weight;
+    text-align: left;
+    text-decoration: overline;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    text-indent: initial;        
+    text-decoration-style: line-through;
+    text-align-last: auto;
+    text-anchor: start;
+    text-underline-position: below;
+    text-orientation: sideways;
+    text-justify: distribute;
+    text-emphasis-position: left;
+    text-emphasis-style: circle;
+}
+
+@for $i from 6 through $headings {
+    $math: (5/$i);
+    h#{$i}{
+        @include typography;
+        font-size: 14px + $math;
+        font-weight: 2px + $math;
+        letter-spacing: 0.15px + $math;
+        text-shadow: invert($color + $math);
+        text-decoration-color: $color + #a5a5a5 + $math;
+        text-emphasis-color: $color + #b12bb1 + $math;
+    }
+}
+
+p {
+    @include typography;
+    font-size: 14px;
+    font-weight: 2px;
+    letter-spacing: inherit;
+}

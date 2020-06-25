@@ -2,7 +2,7 @@
 @import "dist/example";
 
 // should be used before @use to configure forward -with added abbriviation
-@forward 'src/example'as list-*;
+@forward 'src/example' as list-*;
 // uses modules from other files, such as _button.scss
 @use "src/button";
 /* keep in mind that no matter how many times you import a file with @use, it
