@@ -5,13 +5,13 @@ body.light-mode {
 }
 
 body.lighter-mode {
-  color: #006500;
-  background-color: #bdffbf;
+  color: #3b4500;
+  background-color: #ffff7f;
 }
 
 body.darker-mode {
-  color: #bdffbf;
-  background-color: #006500;
+  color: #ffff7f;
+  background-color: #3b4500;
 }
 
 body.dark-mode {
@@ -21,7 +21,7 @@ body.dark-mode {
 
 /* Fonts */
 h6 {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -34,11 +34,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bd1fbb;
+  color: #493ffb;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #ffddff;
+  text-decoration-color: #fffdff;
 }
 
 h6.title {
@@ -46,7 +46,7 @@ h6.title {
 }
 
 h5 {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -59,11 +59,11 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bd1fbb;
+  color: #493ffb;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: #ffe2ff;
+  text-decoration-color: white;
 }
 
 h5.title {
@@ -71,7 +71,7 @@ h5.title {
 }
 
 h4 {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -84,11 +84,11 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bd1fbb;
+  color: #493ffb;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: #ffeaff;
+  text-decoration-color: white;
 }
 
 h4.title {
@@ -96,7 +96,7 @@ h4.title {
 }
 
 h3 {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -109,11 +109,11 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bd1fbb;
+  color: #493ffb;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
-  text-decoration-color: #fff6ff;
+  text-decoration-color: white;
 }
 
 h3.title {
@@ -121,7 +121,7 @@ h3.title {
 }
 
 h2 {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -134,7 +134,7 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bd1fbb;
+  color: #493ffb;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
@@ -146,7 +146,7 @@ h2.title {
 }
 
 h1 {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -159,7 +159,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bd1fbb;
+  color: #493ffb;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -171,7 +171,7 @@ h1.title {
 }
 
 p {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -187,7 +187,7 @@ p {
 }
 
 ol {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -204,7 +204,7 @@ ol {
 }
 
 ul {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -221,7 +221,7 @@ ul {
 }
 
 strong {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -234,11 +234,10 @@ strong {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-weight: bolder;
-  font-size: inherit2px;
 }
 
 em {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -252,12 +251,11 @@ em {
   font-variant-east-asian: simplified;
   font-style: italic;
   font-family: "Franklin Gothic Medium";
-  font-size: inherit2px;
   text-decoration: underline;
 }
 
 code {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -270,8 +268,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #86ff88;
-  background-color: #003b00;
+  color: #faff48;
+  background-color: #111b00;
   display: inline-block;
   padding: 1em;
 }
@@ -282,11 +280,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #006200;
+  color: #384200;
 }
 
 a {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -299,17 +297,17 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #006200;
+  color: #384200;
 }
 
 a:hover {
   text-decoration: double;
-  color: #86ff88;
+  color: #faff48;
 }
 
 /* Forms */
 button {
-  color: #42e044;
+  color: #b6c004;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -323,31 +321,31 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #bd1fbb;
-  background-color: #42e0ff;
+  color: #493ffb;
+  background-color: #b6c0ff;
   padding: 1em;
 }
 
 button.delete {
   border-color: lightcoral;
-  background-color: #ffe044;
+  background-color: #ffc004;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #d8ff44;
+  background-color: #ffff04;
 }
 
 button.go {
   border-color: lightgreen;
-  background-color: #42ff44;
+  background-color: #b6ff04;
 }
 
 form {
   padding: 1rem;
   border: 4px solid black;
-  color: black;
-  background-color: white;
+  color: #00002f;
+  background-color: #ffffd0;
 }
 
 label.switch-v1 {
@@ -363,12 +361,12 @@ label.switch-v1 input {
 
 label.switch-v1 div, label.switch-v1 span {
   position: absolute;
-  cursor: crosshair;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  color: #bd1fbb;
+  color: #493ffb;
   background-color: #ab3600;
   border-radius: 34px;
   transition: .4s;
@@ -412,7 +410,7 @@ label.checkbox-v1 input {
 
 label.checkbox-v1 div, label.checkbox-v1 span {
   position: absolute;
-  cursor: crosshair;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -446,12 +444,12 @@ label.switch-v2 input {
 
 label.switch-v2 div, label.switch-v2 span {
   position: absolute;
-  cursor: crosshair;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  color: #bd1fbb;
+  color: #493ffb;
   background-color: #cc0976;
   border-radius: 34px;
   transition: .4s;
@@ -495,7 +493,7 @@ label.checkbox-v2 input {
 
 label.checkbox-v2 div, label.checkbox-v2 span {
   position: absolute;
-  cursor: crosshair;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -529,12 +527,12 @@ label.switch-v3 input {
 
 label.switch-v3 div, label.switch-v3 span {
   position: absolute;
-  cursor: crosshair;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  color: #bd1fbb;
+  color: #493ffb;
   background-color: #00c8a0;
   border-radius: 34px;
   transition: .4s;
@@ -578,7 +576,7 @@ label.checkbox-v3 input {
 
 label.checkbox-v3 div, label.checkbox-v3 span {
   position: absolute;
-  cursor: crosshair;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;

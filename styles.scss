@@ -1,6 +1,9 @@
-/* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
+/* @import 'partials/fonts', 'partials/forms', 'partials/shapes'; */
 
+/* Components */
 $color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
+
+// add tab title
 
 body {
     &.light-mode {
@@ -23,6 +26,11 @@ body {
         background-color: black;
     }
 }
+
+// add navbar
+// add main
+// add section
+// add footer
 
 /* Fonts */
 @mixin typography {
@@ -83,7 +91,6 @@ ul {
 strong {
     @include typography;
     font-weight: bolder;
-    font-size: inherit + 2px;
 }
 
 // emphasis type
@@ -91,7 +98,6 @@ em {
     @include typography;
     font-style: italic;
     font-family: "Franklin Gothic Medium";
-    font-size: inherit + 2px;
     text-decoration: underline;
 }
 
@@ -156,7 +162,95 @@ form {
     background-color: $color + #cccccc;
 }
 
-// add input types
+/* fix types */
+// @mixin type {
+//     height: 18px;
+//     width: 75px;
+//     position: relative;
+//     padding: 12px 20px;
+//     margin: 8px 0;
+//     color: black;
+//     box-sizing: border-box;
+//     background-color: white;
+// }
+
+// input {
+//     &[type=color] {
+//         @include type;
+//         width: 40px;
+//         height: 40px;
+//         overflow: hidden;
+//         border: solid 2px #ddd;
+//         border-radius: 40px;
+//     }
+
+//     &[type=date] {
+//         @include type;
+//     }
+
+//     &[type=datetime-local] {
+//         @include type;
+//     }
+
+//     &[type=email] {
+//         @include type;
+//     }
+
+//     &[type=file] {
+//         @include type;
+//     }
+
+//     &[type=image] {
+//         @include type;
+//     }
+
+//     &[type=month] {
+//         @include type;
+//     }
+
+//     &[type=number] {
+//         @include type;
+//     }
+
+//     &[type=password] {
+//         @include type;
+//     }
+
+//     &[type=range] {
+//         @include type;
+//     }
+
+//     &[type=search] {
+//         @include type;
+//         background-image: url('searchicon.png');
+//         background-position: 10px 10px;
+//         background-repeat: no-repeat;
+//         padding-left: 40px;
+//         transition: width 0.4s ease-in-out;
+//     }
+
+//     &[type=search]:focus {
+//         transition: width 0.4s ease-in-out;
+//     }
+
+//     &[type=time] {
+//         @include type;
+//     }
+
+//     &[type=url] {
+//         @include type;
+//     }
+
+//     &[type=week] {
+//         @include type;
+//     }
+// }
+
+// textarea {
+//     @include type;
+//     width: 50%;
+//     height: 25%;
+// }
 
 $version: (
     1: #2196F3,
