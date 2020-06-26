@@ -5,13 +5,13 @@ body.light-mode {
 }
 
 body.lighter-mode {
-  color: #000074;
-  background-color: #92c8ff;
+  color: #247d50;
+  background-color: white;
 }
 
 body.darker-mode {
-  color: #92c8ff;
-  background-color: #000074;
+  color: white;
+  background-color: #247d50;
 }
 
 body.dark-mode {
@@ -21,7 +21,7 @@ body.dark-mode {
 
 /* Fonts */
 h6 {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -34,11 +34,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #e8b210;
+  color: #600734;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #ffffce;
+  text-decoration-color: #ffc5f2;
 }
 
 h6.title {
@@ -46,7 +46,7 @@ h6.title {
 }
 
 h5 {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -59,11 +59,11 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #e8b210;
+  color: #600734;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: #ffffd3;
+  text-decoration-color: #ffcaf7;
 }
 
 h5.title {
@@ -71,7 +71,7 @@ h5.title {
 }
 
 h4 {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -84,11 +84,11 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #e8b210;
+  color: #600734;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: #ffffdb;
+  text-decoration-color: #ffd2ff;
 }
 
 h4.title {
@@ -96,7 +96,7 @@ h4.title {
 }
 
 h3 {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -109,11 +109,11 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #e8b210;
+  color: #600734;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
-  text-decoration-color: #ffffe7;
+  text-decoration-color: #ffdeff;
 }
 
 h3.title {
@@ -121,7 +121,7 @@ h3.title {
 }
 
 h2 {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -134,11 +134,11 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #e8b210;
+  color: #600734;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: #fff7ff;
 }
 
 h2.title {
@@ -146,7 +146,7 @@ h2.title {
 }
 
 h1 {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -159,7 +159,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #e8b210;
+  color: #600734;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -171,7 +171,7 @@ h1.title {
 }
 
 p {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -187,7 +187,7 @@ p {
 }
 
 ol {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -204,7 +204,7 @@ ol {
 }
 
 ul {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -221,7 +221,7 @@ ul {
 }
 
 strong {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -237,7 +237,7 @@ strong {
 }
 
 em {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -255,7 +255,7 @@ em {
 }
 
 code {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -268,8 +268,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #5be6ff;
-  background-color: #00004a;
+  color: #e3ffff;
+  background-color: #005326;
   display: inline-block;
   padding: 1em;
 }
@@ -280,11 +280,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #000071;
+  color: #217a4d;
 }
 
 a {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -297,17 +297,17 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #000071;
+  color: #217a4d;
 }
 
 a:hover {
   text-decoration: double;
-  color: #5be6ff;
+  color: #e3ffff;
 }
 
 /* Forms */
 button {
-  color: #174def;
+  color: #9ff8cb;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -321,32 +321,32 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #e8b210;
-  background-color: #174dff;
+  color: #600734;
+  background-color: #9ff8ff;
   padding: 1em;
 }
 
 button.delete {
   border-color: lightcoral;
-  background-color: #ff4def;
+  background-color: #fff8cb;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #ade3ef;
+  background-color: #ffffcb;
 }
 
 button.go {
   border-color: lightgreen;
-  background-color: #17cdef;
+  background-color: #9fffcb;
 }
 
 form {
   padding: 1rem;
   align-items: center;
   border: 4px solid black;
-  color: #1c0000;
-  background-color: #e3ffff;
+  color: black;
+  background-color: white;
 }
 
 input[type=text] {
@@ -546,7 +546,7 @@ input[type=url] {
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=time]:focus, input[type=month]:focus, input[type=week]:focus, input[type=datetime-local]:focus, input[type=search]:focus, input[type=number]:focus, input[type=url]:focus {
-  border-color: #e8b210;
+  border-color: #600734;
 }
 
 textarea {
@@ -564,7 +564,7 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #e8b210;
+  border-color: #600734;
 }
 
 label.switch-v1 {
@@ -587,7 +587,7 @@ label.switch-v1 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #e8b210;
+  color: #600734;
   background-color: #ab3600;
   border-radius: 34px;
   transition: .4s;
@@ -632,6 +632,7 @@ label.checkbox-v1 div,
 label.checkbox-v1 span {
   position: absolute;
   cursor: pointer;
+  content: "";
   top: 0;
   left: 0;
   right: 0;
@@ -650,7 +651,6 @@ label.checkbox-v1 input:checked + span:after {
   background-image: url(../assests/icons/check.png);
   background-repeat: no-repeat;
   background-size: 35px;
-  top: 0;
 }
 
 label.switch-v2 {
@@ -673,7 +673,7 @@ label.switch-v2 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #e8b210;
+  color: #600734;
   background-color: #cc0976;
   border-radius: 34px;
   transition: .4s;
@@ -718,6 +718,7 @@ label.checkbox-v2 div,
 label.checkbox-v2 span {
   position: absolute;
   cursor: pointer;
+  content: "";
   top: 0;
   left: 0;
   right: 0;
@@ -736,7 +737,6 @@ label.checkbox-v2 input:checked + span:after {
   background-image: url(../assests/icons/check.png);
   background-repeat: no-repeat;
   background-size: 35px;
-  top: 0;
 }
 
 label.switch-v3 {
@@ -759,7 +759,7 @@ label.switch-v3 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #e8b210;
+  color: #600734;
   background-color: #00c8a0;
   border-radius: 34px;
   transition: .4s;
@@ -804,6 +804,7 @@ label.checkbox-v3 div,
 label.checkbox-v3 span {
   position: absolute;
   cursor: pointer;
+  content: "";
   top: 0;
   left: 0;
   right: 0;
@@ -822,7 +823,6 @@ label.checkbox-v3 input:checked + span:after {
   background-image: url(../assests/icons/check.png);
   background-repeat: no-repeat;
   background-size: 35px;
-  top: 0;
 }
 
 /* Shapes */

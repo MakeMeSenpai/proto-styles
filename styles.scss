@@ -296,9 +296,9 @@ $version: (
 );
 
 label {
-
     @each $version,
     $value in $version {
+        // Switch
         &.switch-v#{$version} {
             position: relative;
             display: inline-block;
@@ -348,6 +348,7 @@ label {
             }
         }
 
+        // Checkbox
         &.checkbox-v#{$version} {
             position: relative;
             display: inline-block;
@@ -363,6 +364,7 @@ label {
             span {
                 position: absolute;
                 cursor: pointer;
+                content: "";
                 top: 0;
                 left: 0;
                 right: 0;
@@ -381,10 +383,10 @@ label {
                 background-image: url(../assests/icons/check.png);
                 background-repeat: no-repeat;
                 background-size: 35px;
-                top: 0;
             }
         }
 
+        // Radio
         // &.radio-v#{$version} {
 
         // }
