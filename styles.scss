@@ -7,7 +7,7 @@ $color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
 
 body {
     &.light-mode {
-        color:black;
+        color: black;
         background-color: white;
     }
 
@@ -62,6 +62,7 @@ $headings: 1;
         font-weight: 2px + $math;
         text-decoration: overline;
         text-decoration-color: invert($color) + #a5a5a5 + ($math*2);
+
         &.title {
             font-family: 'Franklin Gothic Medium';
         }
@@ -141,14 +142,17 @@ button {
     color: invert($color);
     background-color: $color + blue;
     padding: 1em;
+
     &.delete {
         border-color: lightcoral;
         background-color: $color + red;
     }
+
     &.warning {
         border-color: lightgoldenrodyellow;
         background-color: $color + rgb(150, 150, 0);
     }
+
     &.go {
         border-color: lightgreen;
         background-color: $color + green;
@@ -252,25 +256,27 @@ form {
 //     height: 25%;
 // }
 
-$version: (
-    1: #2196F3,
+$version: (1: #2196F3,
     2: #00C356,
     3: #cd042c,
 );
 
 label {
-    @each $version, $value in $version {
-        &.switch-v#{$version}{
+
+    @each $version,
+    $value in $version {
+        &.switch-v#{$version} {
             position: relative;
             display: inline-block;
             width: 60px;
             height: 34px;
-    
+
             input {
                 visibility: hidden;
             }
-    
-            div, span {
+
+            div,
+            span {
                 position: absolute;
                 cursor: pointer;
                 top: 0;
@@ -282,8 +288,9 @@ label {
                 border-radius: 34px;
                 transition: .4s;
             }
-    
-            div:before, span:before {
+
+            div:before,
+            span:before {
                 position: absolute;
                 content: "";
                 height: 26px;
@@ -294,16 +301,19 @@ label {
                 border-radius: 50%;
                 transition: .4s;
             }
-    
-            input:checked + div, input:checked + span {
+
+            input:checked+div,
+            input:checked+span {
                 background-color: $value;
             }
-    
-            input:focus + div, input:focus + span {
+
+            input:focus+div,
+            input:focus+span {
                 box-shadow: 0 0 1px $value;
             }
-    
-            input:checked + div:before, input:checked + span:before {
+
+            input:checked+div:before,
+            input:checked+span:before {
                 transform: translateX(26px);
             }
         }
@@ -314,12 +324,13 @@ label {
             width: 34px;
             height: 34px;
             border: 4px solid black;
-    
+
             input {
                 visibility: hidden;
             }
-    
-            div, span {
+
+            div,
+            span {
                 position: absolute;
                 cursor: pointer;
                 top: 0;
@@ -329,16 +340,19 @@ label {
                 background-color: #ccc - $value;
                 transition: .4s;
             }
-    
-            input:checked + div, input:checked + span {
+
+            input:checked+div,
+            input:checked+span {
                 background-color: $value;
             }
-    
-            input:focus + div, input:focus + span {
+
+            input:focus+div,
+            input:focus+span {
                 box-shadow: 0 0 1px $value;
             }
-    
-            input:checked, input:checked {
+
+            input:checked,
+            input:checked {
                 transform: translateX(26px);
             }
         }
