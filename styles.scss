@@ -161,102 +161,116 @@ button {
 
 form {
     padding: 1rem;
+    align-items: center;
     border: 4px solid black;
     color: invert($color) - #cccccc;
     background-color: $color + #cccccc;
 }
 
-/* fix types */
-// @mixin type {
-//     height: 18px;
-//     width: 75px;
-//     position: relative;
-//     padding: 12px 20px;
-//     margin: 8px 0;
-//     color: black;
-//     box-sizing: border-box;
-//     background-color: white;
-// }
+@mixin type {
+    height: 32px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    box-shadow: 1.5px 1.5px black;
+}
 
-// input {
-//     &[type=color] {
-//         @include type;
-//         width: 40px;
-//         height: 40px;
-//         overflow: hidden;
-//         border: solid 2px #ddd;
-//         border-radius: 40px;
-//     }
+input {
+    &[type=text] {
+        @include type;
+    }
 
-//     &[type=date] {
-//         @include type;
-//     }
+    &[type=email] {
+        @include type;
+    }
 
-//     &[type=datetime-local] {
-//         @include type;
-//     }
+    &[type=password] {
+        @include type;
+    }
 
-//     &[type=email] {
-//         @include type;
-//     }
+    &[type=date] {
+        @include type;
+    }
 
-//     &[type=file] {
-//         @include type;
-//     }
+    &[type=time] {
+        @include type;
+    }
 
-//     &[type=image] {
-//         @include type;
-//     }
+    &[type=month] {
+        @include type;
+    }
 
-//     &[type=month] {
-//         @include type;
-//     }
+    &[type=week] {
+        @include type;
+    }
 
-//     &[type=number] {
-//         @include type;
-//     }
+    &[type=datetime-local] {
+        @include type;
+    }
 
-//     &[type=password] {
-//         @include type;
-//     }
+    &[type=color] {
+        @include type;
+        width: 37px;
+        height: 35px;
+        border: none;
+        border-radius: 50%;
+        background: none;
+        box-shadow: none;
+    }
 
-//     &[type=range] {
-//         @include type;
-//     }
+    &[type=color]::-webkit-color-swatch-wrapper {
+        padding: 0;
+    }
 
-//     &[type=search] {
-//         @include type;
-//         background-image: url('searchicon.png');
-//         background-position: 10px 10px;
-//         background-repeat: no-repeat;
-//         padding-left: 40px;
-//         transition: width 0.4s ease-in-out;
-//     }
+    &[type=color]::-webkit-color-swatch {
+        border: 2px solid #ddd;
+        border-radius: 50%;
+    }
 
-//     &[type=search]:focus {
-//         transition: width 0.4s ease-in-out;
-//     }
+    &[type=file] {
+        @include type;
+        border: none;
+        box-shadow: none;
+    }
 
-//     &[type=time] {
-//         @include type;
-//     }
+    &[type=range] {
+        @include type;
+        border: none;
+        box-shadow: none;
+    }
 
-//     &[type=url] {
-//         @include type;
-//     }
+    &[type=search] {
+        @include type;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        transition: width 0.4s ease-in-out;
+    }
 
-//     &[type=week] {
-//         @include type;
-//     }
-// }
+    &[type=search]:focus {
+        transition: width 0.4s ease-in-out;
+    }
 
-// textarea {
-//     @include type;
-//     width: 50%;
-//     height: 25%;
-// }
+    &[type=number] {
+        @include type;
+    }
 
-$version: (1: #2196F3,
+    &[type=url] {
+        @include type;
+    }
+}
+
+textarea {
+    @include type;
+    width: 50%;
+    height: 25%;
+}
+
+$version: (
+    1: #2196F3,
     2: #00C356,
     3: #cd042c,
 );
@@ -355,6 +369,10 @@ label {
             input:checked {
                 transform: translateX(26px);
             }
+        }
+
+        &.radio-v#{$version} {
+
         }
     }
 }
