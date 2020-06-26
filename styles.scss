@@ -149,10 +149,106 @@ button {
     }
 }
 
-label, span, div {
-    border-radius: 12%;
-    border-width: 2px;
-    padding: 0.25rem;
+form {
+    padding: 1rem;
+    border: 4px solid black;
+    color: invert($color) - #cccccc;
+    background-color: $color + #cccccc;
+}
+
+// add input types
+
+$version: (
+    1: #2196F3,
+    2: #00C356,
+    3: #cd042c,
+);
+
+label {
+    @each $version, $value in $version {
+        &.switch-v#{$version}{
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+    
+            input {
+                visibility: hidden;
+            }
+    
+            div, span {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: invert($color);
+                background-color: #ccc - $value;
+                border-radius: 34px;
+                transition: .4s;
+            }
+    
+            div:before, span:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white - $value;
+                border-radius: 50%;
+                transition: .4s;
+            }
+    
+            input:checked + div, input:checked + span {
+                background-color: $value;
+            }
+    
+            input:focus + div, input:focus + span {
+                box-shadow: 0 0 1px $value;
+            }
+    
+            input:checked + div:before, input:checked + span:before {
+                transform: translateX(26px);
+            }
+        }
+
+        &.checkbox-v#{$version} {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            border: 4px solid black;
+    
+            input {
+                visibility: hidden;
+            }
+    
+            div, span {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc - $value;
+                transition: .4s;
+            }
+    
+            input:checked + div, input:checked + span {
+                background-color: $value;
+            }
+    
+            input:focus + div, input:focus + span {
+                box-shadow: 0 0 1px $value;
+            }
+    
+            input:checked, input:checked {
+                transform: translateX(26px);
+            }
+        }
+    }
 }
 
 /* Shapes */
