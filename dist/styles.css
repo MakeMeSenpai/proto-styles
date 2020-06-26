@@ -1,17 +1,37 @@
 /* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
-/* Fonts */
-body.dark-mode {
-  color: white;
-  background-color: #461022;
-}
-
 body.light-mode {
-  color: #461022;
+  color: black;
   background-color: white;
 }
 
+body.lighter-mode {
+  color: #000b00;
+  background-color: #aaffd5;
+}
+
+body.lighter-mode label {
+  color: black;
+  background-color: white;
+}
+
+body.darker-mode {
+  color: #aaffd5;
+  background-color: #000b00;
+}
+
+body.darker-mode label {
+  color: white;
+  background-color: black;
+}
+
+body.dark-mode {
+  color: white;
+  background-color: black;
+}
+
+/* Fonts */
 h6 {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -24,11 +44,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3e7462;
+  color: #d079a5;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #fcffff;
+  text-decoration-color: white;
 }
 
 h6.title {
@@ -36,7 +56,7 @@ h6.title {
 }
 
 h5 {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -49,7 +69,7 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3e7462;
+  color: #d079a5;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
@@ -61,7 +81,7 @@ h5.title {
 }
 
 h4 {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -74,7 +94,7 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3e7462;
+  color: #d079a5;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
@@ -86,7 +106,7 @@ h4.title {
 }
 
 h3 {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -99,7 +119,7 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3e7462;
+  color: #d079a5;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
@@ -111,7 +131,7 @@ h3.title {
 }
 
 h2 {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -124,7 +144,7 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3e7462;
+  color: #d079a5;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
@@ -136,7 +156,7 @@ h2.title {
 }
 
 h1 {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -149,7 +169,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3e7462;
+  color: #d079a5;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -161,7 +181,7 @@ h1.title {
 }
 
 p {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -177,7 +197,7 @@ p {
 }
 
 ol {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -194,7 +214,7 @@ ol {
 }
 
 ul {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -211,7 +231,7 @@ ul {
 }
 
 strong {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -228,7 +248,7 @@ strong {
 }
 
 em {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -247,7 +267,7 @@ em {
 }
 
 code {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -260,8 +280,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #ffffe1;
-  background-color: #1c0000;
+  color: #73ff9e;
+  background-color: black;
   display: inline-block;
   padding: 1em;
 }
@@ -272,11 +292,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #430d1f;
+  color: #000800;
 }
 
 a {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -289,17 +309,17 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #430d1f;
+  color: #000800;
 }
 
 a:hover {
   text-decoration: double;
-  color: #ffffe1;
+  color: #73ff9e;
 }
 
-/* Button */
+/* Forms */
 button {
-  color: #c18b9d;
+  color: #2f865a;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -313,24 +333,30 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #3e7462;
-  background-color: #c18bff;
+  color: #d079a5;
+  background-color: #2f86ff;
   padding: 1em;
 }
 
 button.delete {
   border-color: lightcoral;
-  background-color: #ff8b9d;
+  background-color: #ff865a;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #ffff9d;
+  background-color: #c5ff5a;
 }
 
 button.go {
   border-color: lightgreen;
-  background-color: #c1ff9d;
+  background-color: #2fff5a;
+}
+
+label, span, div {
+  border-radius: 12%;
+  border-width: 2px;
+  padding: 0.25rem;
 }
 
 /* Shapes */

@@ -1,19 +1,30 @@
 /* @import 'partials/fonts', 'partials/button', 'partials/shapes'; */
 
 $color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
-$headings: 1;
+
+body {
+    &.light-mode {
+        color:black;
+        background-color: white;
+    }
+
+    &.lighter-mode {
+        color: $color - #7b7b7b;
+        background-color: $color + #7b7b7b;
+    }
+
+    &.darker-mode {
+        color: $color + #7b7b7b;
+        background-color: $color - #7b7b7b;
+    }
+
+    &.dark-mode {
+        color: white;
+        background-color: black;
+    }
+}
 
 /* Fonts */
-body.dark-mode {
-    color: $color + #7b7b7b;
-    background-color: $color - #7b7b7b;
-}
-
-body.light-mode {
-    color: $color - #7b7b7b;
-    background-color: $color + #7b7b7b;
-}
-
 @mixin typography {
     color: $color;
     font-size: 14px;
@@ -30,6 +41,8 @@ body.light-mode {
 }
 
 // headings
+$headings: 1;
+
 @for $i from 6 through $headings {
     $math: (75/$i);
 
@@ -136,7 +149,11 @@ button {
     }
 }
 
-
+label, span, div {
+    border-radius: 12%;
+    border-width: 2px;
+    padding: 0.25rem;
+}
 
 /* Shapes */
 
