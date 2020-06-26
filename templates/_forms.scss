@@ -1,138 +1,4 @@
-// @import "./templates/fonts", "./templates/forms", "./templates/shapes";
-
-/* Components */
-$color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
-
-// add tab title
-
-body {
-    &.light-mode {
-        color: black;
-        background-color: white;
-    }
-
-    &.lighter-mode {
-        color: $color - #7b7b7b;
-        background-color: $color + #7b7b7b;
-    }
-
-    &.darker-mode {
-        color: $color + #7b7b7b;
-        background-color: $color - #7b7b7b;
-    }
-
-    &.dark-mode {
-        color: white;
-        background-color: black;
-    }
-}
-
-// add navbar
-// add main
-// add section
-// add footer
-
-/* Fonts */
-@mixin typography {
-    color: $color;
-    font-size: 14px;
-    font-weight: 2px;
-    text-align: left;
-    font-kerning: auto;
-    font-family: sans-serif;
-    text-align-last: auto;
-    text-transform: capitalize;
-    text-orientation: sideways;
-    font-stretch: semi-expanded;
-    text-underline-position: above;
-    font-variant-east-asian: simplified;
-}
-
-// headings
-$headings: 1;
-
-@for $i from 6 through $headings {
-    $math: (75/$i);
-
-    h#{$i} {
-        @include typography;
-        font-style: oblique;
-        color: invert($color);
-        font-size: 14px + $math;
-        font-weight: 2px + $math;
-        text-decoration: overline;
-        text-decoration-color: invert($color) + #a5a5a5 + ($math*2);
-
-        &.title {
-            font-family: 'Franklin Gothic Medium';
-        }
-    }
-}
-
-// paragraph
-p {
-    @include typography;
-    letter-spacing: inherit;
-}
-
-// list type
-ol {
-    @include typography;
-    list-style-type: upper-roman;
-    font-size: larger;
-}
-
-ul {
-    @include typography;
-    list-style-type: circle;
-    font-size: x-large;
-}
-
-// strong/bold
-strong {
-    @include typography;
-    font-weight: bolder;
-}
-
-// emphasis type
-em {
-    @include typography;
-    font-style: italic;
-    font-family: "Franklin Gothic Medium";
-    text-decoration: underline;
-}
-
-// code 
-code {
-    @include typography;
-    font-family: 'Courier New', Courier, monospace;
-    color: $color + (white - #bb66bb);
-    background-color: $color - #a5a5a5;
-    display: inline-block;
-    padding: 1em;
-}
-
-// abbriviation
-abbr {
-    position: relative;
-}
-
-abbr:hover {
-    text-decoration: none;
-    color: $color - #7e7e7e;
-}
-
-// links
-a {
-    @include typography;
-    text-decoration: none;
-    color: $color - #7e7e7e;
-}
-
-a:hover {
-    text-decoration: double;
-    color: $color + (white - #bb66bb);
-}
+@import "./partials/components";
 
 /* Forms */
 button {
@@ -244,11 +110,10 @@ input {
 
     &[type=search] {
         @include type;
-        background-image: url('../assests/icons/search.png');
-        background-position: 10px;
-        background-size: 18px;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px;
         background-repeat: no-repeat;
-        padding-left: 35px;
+        padding-left: 40px;
         transition: width 0.4s ease-in-out;
     }
 
@@ -342,6 +207,11 @@ label {
                 background-color: $value;
             }
 
+            input:focus+div,
+            input:focus+span {
+                box-shadow: 0 0 1px $value;
+            }
+
             input:checked+div:before,
             input:checked+span:before {
                 transform: translateX(26px);
@@ -353,6 +223,7 @@ label {
             display: inline-block;
             width: 34px;
             height: 34px;
+            border: 4px solid black;
             outline: none !important;
 
             input {
@@ -378,10 +249,15 @@ label {
 
             input:checked+div:after,
             input:checked+span:after {
-                background-image: url(../assests/icons/check.png);
-                background-repeat: no-repeat;
-                background-size: 35px;
-                top: 0;
+                top: 5px;
+                left: 9px;
+                width: 50px;
+                height: 100px;
+                display: block;
+                background-color: white;
+                // border-right: 3px solid white;
+                // border-bottom: 3px solid white;
+                transform: rotate(45deg);
             }
         }
 
@@ -390,123 +266,3 @@ label {
         // }
     }
 }
-
-/* Shapes */
-// // 2D Shapes
-// .square {
-// 
-// }
-//
-// .rectangle {
-// 
-// }
-//
-// .diamond {
-// 
-// }
-//
-// .parallelogram {
-// 
-// }
-//
-// .triangle {
-// 
-// }
-//
-// .scalene-triangle {
-// 
-// }
-//
-// .right-triangle {
-// 
-// }
-//
-// .pentagon {
-// 
-// }
-//
-// .hexagon {
-// 
-// }
-//
-// .heptagon {
-// 
-// }
-//
-// .octagon {
-// 
-// }
-//
-// .nonagon {
-// 
-// }
-//
-// .circle {
-// 
-// }
-//
-// .oval {
-// 
-// }
-
-// //Special Shapes
-// .heart {
-// 
-// }
-//
-// .cross {
-// 
-// }
-//
-// .arrow {
-// 
-// }
-//
-// .star {
-// 
-// }
-//
-// .crescent {
-// 
-// }
-//
-// add more logos
-
-// // 3D Shapes
-// .cube {
-// 
-// }
-//
-// .cuboid {
-// 
-// }
-//
-// .square-pyramid {
-// 
-// }
-//
-// .triangular-prism {
-// 
-// }
-//
-// .triangular-pyramid {
-// 
-// }
-//
-// .cone {
-// 
-// }
-//
-// .cylinder {
-// 
-// }
-//
-// .torus {
-// 
-// }
-//
-// .sphere {
-// 
-// }
-
-/* Misc. */

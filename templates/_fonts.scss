@@ -1,7 +1,6 @@
-// Fonts 
-$color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
-$headings: 1;
+@import "./partials/components";
 
+/* Fonts */
 @mixin typography {
     color: $color;
     font-size: 14px;
@@ -17,9 +16,13 @@ $headings: 1;
     font-variant-east-asian: simplified;
 }
 
+// headings
+$headings: 1;
+
 @for $i from 6 through $headings {
     $math: (75/$i);
-    h#{$i}{
+
+    h#{$i} {
         @include typography;
         font-style: oblique;
         color: invert($color);
@@ -27,6 +30,10 @@ $headings: 1;
         font-weight: 2px + $math;
         text-decoration: overline;
         text-decoration-color: invert($color) + #a5a5a5 + ($math*2);
+
+        &.title {
+            font-family: 'Franklin Gothic Medium';
+        }
     }
 }
 
@@ -53,7 +60,6 @@ ul {
 strong {
     @include typography;
     font-weight: bolder;
-    font-size: inherit + 2px;
 }
 
 // emphasis type
@@ -61,7 +67,6 @@ em {
     @include typography;
     font-style: italic;
     font-family: "Franklin Gothic Medium";
-    font-size: inherit + 2px;
     text-decoration: underline;
 }
 

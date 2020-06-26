@@ -1,0 +1,31 @@
+/* Components */
+$color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
+
+// add tab title
+
+body {
+    &.light-mode {
+        color: black;
+        background-color: white;
+    }
+
+    &.lighter-mode {
+        color: $color - #7b7b7b;
+        background-color: $color + #7b7b7b;
+    }
+
+    &.darker-mode {
+        color: $color + #7b7b7b;
+        background-color: $color - #7b7b7b;
+    }
+
+    &.dark-mode {
+        color: white;
+        background-color: black;
+    }
+}
+
+// add navbar
+// add main
+// add section
+// add footer
