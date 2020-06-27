@@ -5,13 +5,13 @@ body.light-mode {
 }
 
 body.lighter-mode {
-  color: #247d50;
-  background-color: white;
+  color: #517900;
+  background-color: #ffffd8;
 }
 
 body.darker-mode {
-  color: white;
-  background-color: #247d50;
+  color: #ffffd8;
+  background-color: #517900;
 }
 
 body.dark-mode {
@@ -21,7 +21,7 @@ body.dark-mode {
 
 /* Fonts */
 h6 {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -34,11 +34,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #600734;
+  color: #330ba2;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #ffc5f2;
+  text-decoration-color: #f1c9ff;
 }
 
 h6.title {
@@ -46,7 +46,7 @@ h6.title {
 }
 
 h5 {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -59,11 +59,11 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #600734;
+  color: #330ba2;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: #ffcaf7;
+  text-decoration-color: #f6ceff;
 }
 
 h5.title {
@@ -71,7 +71,7 @@ h5.title {
 }
 
 h4 {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -84,11 +84,11 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #600734;
+  color: #330ba2;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: #ffd2ff;
+  text-decoration-color: #fed6ff;
 }
 
 h4.title {
@@ -96,7 +96,7 @@ h4.title {
 }
 
 h3 {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -109,11 +109,11 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #600734;
+  color: #330ba2;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
-  text-decoration-color: #ffdeff;
+  text-decoration-color: #ffe2ff;
 }
 
 h3.title {
@@ -121,7 +121,7 @@ h3.title {
 }
 
 h2 {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -134,11 +134,11 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #600734;
+  color: #330ba2;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
-  text-decoration-color: #fff7ff;
+  text-decoration-color: #fffbff;
 }
 
 h2.title {
@@ -146,7 +146,7 @@ h2.title {
 }
 
 h1 {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -159,7 +159,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #600734;
+  color: #330ba2;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -171,7 +171,7 @@ h1.title {
 }
 
 p {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -187,7 +187,7 @@ p {
 }
 
 ol {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -204,7 +204,7 @@ ol {
 }
 
 ul {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -221,7 +221,7 @@ ul {
 }
 
 strong {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -237,7 +237,7 @@ strong {
 }
 
 em {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -255,7 +255,7 @@ em {
 }
 
 code {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -268,8 +268,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #e3ffff;
-  background-color: #005326;
+  color: #ffffa1;
+  background-color: #274f00;
   display: inline-block;
   padding: 1em;
 }
@@ -280,11 +280,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #217a4d;
+  color: #4e7600;
 }
 
 a {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -297,17 +297,17 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #217a4d;
+  color: #4e7600;
 }
 
 a:hover {
   text-decoration: double;
-  color: #e3ffff;
+  color: #ffffa1;
 }
 
 /* Forms */
 button {
-  color: #9ff8cb;
+  color: #ccf45d;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -321,24 +321,24 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #600734;
-  background-color: #9ff8ff;
+  color: #330ba2;
+  background-color: #ccf4ff;
   padding: 1em;
 }
 
 button.delete {
   border-color: lightcoral;
-  background-color: #fff8cb;
+  background-color: #fff45d;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #ffffcb;
+  background-color: #ffff5d;
 }
 
 button.go {
   border-color: lightgreen;
-  background-color: #9fffcb;
+  background-color: #ccff5d;
 }
 
 form {
@@ -349,91 +349,7 @@ form {
   background-color: white;
 }
 
-input[type=text] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=email] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=password] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=date] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=time] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=month] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=week] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=datetime-local] {
+input {
   height: 32px;
   width: 25%;
   position: relative;
@@ -446,15 +362,6 @@ input[type=datetime-local] {
 }
 
 input[type=color] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
   width: 37px;
   height: 35px;
   border: none;
@@ -473,42 +380,15 @@ input[type=color]::-webkit-color-swatch {
 }
 
 input[type=file] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
   border: none;
 }
 
 input[type=range] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
   border: none;
   padding: 0;
 }
 
 input[type=search] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
   background-image: url("../assests/icons/search.png");
   background-position: 10px;
   background-size: 18px;
@@ -521,32 +401,8 @@ input[type=search]:focus {
   width: 100%;
 }
 
-input[type=number] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=url] {
-  height: 32px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  padding: 1em;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 25px;
-  outline: none !important;
-}
-
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=time]:focus, input[type=month]:focus, input[type=week]:focus, input[type=datetime-local]:focus, input[type=search]:focus, input[type=number]:focus, input[type=url]:focus {
-  border-color: #600734;
+input:focus {
+  border-color: #330ba2;
 }
 
 textarea {
@@ -564,7 +420,7 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #600734;
+  border-color: #330ba2;
 }
 
 label.switch-v1 {
@@ -587,7 +443,7 @@ label.switch-v1 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #600734;
+  color: #330ba2;
   background-color: #ab3600;
   border-radius: 34px;
   transition: .4s;
@@ -632,25 +488,35 @@ label.checkbox-v1 div,
 label.checkbox-v1 span {
   position: absolute;
   cursor: pointer;
-  content: "";
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #ab3600;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-label.checkbox-v1 input:checked + div,
-label.checkbox-v1 input:checked + span {
+label.checkbox-v1 input:checked ~ div,
+label.checkbox-v1 input:checked ~ span {
   background-color: #2196F3;
 }
 
-label.checkbox-v1 input:checked + div:after,
-label.checkbox-v1 input:checked + span:after {
-  background-image: url(../assests/icons/check.png);
-  background-repeat: no-repeat;
-  background-size: 35px;
+label.checkbox-v1 div:after,
+label.checkbox-v1 span:after {
+  content: "";
+  position: absolute;
+}
+
+label.checkbox-v1 input:checked ~ div:after,
+label.checkbox-v1 input:checked ~ span:after {
+  display: block;
+  left: 10px;
+  top: 2.5px;
+  width: 10px;
+  height: 18px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(45deg);
 }
 
 label.switch-v2 {
@@ -673,7 +539,7 @@ label.switch-v2 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #600734;
+  color: #330ba2;
   background-color: #cc0976;
   border-radius: 34px;
   transition: .4s;
@@ -718,25 +584,35 @@ label.checkbox-v2 div,
 label.checkbox-v2 span {
   position: absolute;
   cursor: pointer;
-  content: "";
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #cc0976;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-label.checkbox-v2 input:checked + div,
-label.checkbox-v2 input:checked + span {
+label.checkbox-v2 input:checked ~ div,
+label.checkbox-v2 input:checked ~ span {
   background-color: #00C356;
 }
 
-label.checkbox-v2 input:checked + div:after,
-label.checkbox-v2 input:checked + span:after {
-  background-image: url(../assests/icons/check.png);
-  background-repeat: no-repeat;
-  background-size: 35px;
+label.checkbox-v2 div:after,
+label.checkbox-v2 span:after {
+  content: "";
+  position: absolute;
+}
+
+label.checkbox-v2 input:checked ~ div:after,
+label.checkbox-v2 input:checked ~ span:after {
+  display: block;
+  left: 10px;
+  top: 2.5px;
+  width: 10px;
+  height: 18px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(45deg);
 }
 
 label.switch-v3 {
@@ -759,7 +635,7 @@ label.switch-v3 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #600734;
+  color: #330ba2;
   background-color: #00c8a0;
   border-radius: 34px;
   transition: .4s;
@@ -804,25 +680,35 @@ label.checkbox-v3 div,
 label.checkbox-v3 span {
   position: absolute;
   cursor: pointer;
-  content: "";
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #00c8a0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-label.checkbox-v3 input:checked + div,
-label.checkbox-v3 input:checked + span {
+label.checkbox-v3 input:checked ~ div,
+label.checkbox-v3 input:checked ~ span {
   background-color: #cd042c;
 }
 
-label.checkbox-v3 input:checked + div:after,
-label.checkbox-v3 input:checked + span:after {
-  background-image: url(../assests/icons/check.png);
-  background-repeat: no-repeat;
-  background-size: 35px;
+label.checkbox-v3 div:after,
+label.checkbox-v3 span:after {
+  content: "";
+  position: absolute;
+}
+
+label.checkbox-v3 input:checked ~ div:after,
+label.checkbox-v3 input:checked ~ span:after {
+  display: block;
+  left: 10px;
+  top: 2.5px;
+  width: 10px;
+  height: 18px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(45deg);
 }
 
 /* Shapes */

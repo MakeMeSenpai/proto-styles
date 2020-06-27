@@ -180,40 +180,42 @@ form {
 }
 
 input {
+    @include type;
+
     &[type=text] {
-        @include type;
+
     }
 
     &[type=email] {
-        @include type;
+
     }
 
     &[type=password] {
-        @include type;
+
     }
 
     &[type=date] {
-        @include type;
+
     }
 
     &[type=time] {
-        @include type;
+
     }
 
     &[type=month] {
-        @include type;
+
     }
 
     &[type=week] {
-        @include type;
+
     }
 
     &[type=datetime-local] {
-        @include type;
+
     }
 
     &[type=color] {
-        @include type;
+
         width: 37px;
         height: 35px;
         border: none;
@@ -232,18 +234,18 @@ input {
     }
 
     &[type=file] {
-        @include type;
+
         border: none;
     }
 
     &[type=range] {
-        @include type;
+
         border: none;
         padding: 0;
     }
 
     &[type=search] {
-        @include type;
+
         background-image: url('../assests/icons/search.png');
         background-position: 10px;
         background-size: 18px;
@@ -257,24 +259,14 @@ input {
     }
 
     &[type=number] {
-        @include type;
+
     }
 
     &[type=url] {
-        @include type;
+
     }
 
-    &[type=text]:focus,
-    &[type=email]:focus,
-    &[type=password]:focus,
-    &[type=date]:focus,
-    &[type=time]:focus,
-    &[type=month]:focus,
-    &[type=week]:focus,
-    &[type=datetime-local]:focus,
-    &[type=search]:focus,
-    &[type=number]:focus,
-    &[type=url]:focus {
+    &:focus {
         border-color: invert($color);
     }
 }
@@ -352,6 +344,7 @@ label {
         &.checkbox-v#{$version} {
             position: relative;
             display: inline-block;
+            // font-size: 22px;
             width: 34px;
             height: 34px;
             outline: none !important;
@@ -364,25 +357,35 @@ label {
             span {
                 position: absolute;
                 cursor: pointer;
-                content: "";
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 background-color: #ccc - $value;
-                transition: .4s;
+                transition: 0.4s;
             }
 
-            input:checked+div,
-            input:checked+span {
+            input:checked~div, 
+            input:checked~span {
                 background-color: $value;
             }
 
-            input:checked+div:after,
-            input:checked+span:after {
-                background-image: url(../assests/icons/check.png);
-                background-repeat: no-repeat;
-                background-size: 35px;
+            div:after,
+            span:after {
+                content: ""; 
+                position: absolute;
+            }
+
+            input:checked~div:after,
+            input:checked~span:after {
+                display: block;
+                left: 10px;
+                top: 2.5px;
+                width: 10px;
+                height: 18px;
+                border-right: 4px solid white;
+                border-bottom: 4px solid white;
+                transform: rotate(45deg);
             }
         }
 
