@@ -12,11 +12,10 @@
 			<li>
 				<h1 class="title">Proto-styles Framework V.0.0.5</h1>
 			</li>
-			<li><a href="#shapes">Shapes</a></li>
 			<li><a href="#navbar">Navbar</a></li>
-			<li><a href="#headings">Headings</a></li>
-			<li><a href="#type">Type</a></li>
-			<li><a href="#forms">forms</a>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#shapes">Shapes</a></li>
 			<li><a href="#footer">Footer</a></li>
 		</ul>
 		<ul>
@@ -25,8 +24,167 @@
 	</div>
 
 	<div class="container">
+		<section id="navbar">
+			<h1>Navbar</h1>
 
-		<section id="headings">
+			<h2>Navbar 1</h2>
+			<p>A navbar with all elements on the left.</p>
+			<p>Use a single child under <code>div.navbar</code>.</p>
+
+			<div class="navbar">
+				<ol>
+					<li>
+						<h1 class="title">TITLE</h1>
+					</li>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ol>
+			</div>
+
+			<div>
+				<pre>
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+
+
+
+
+			<h2>Navbar 2</h2>
+			<p>A navbar with groups of elements on the left and the right.</p>
+			<p>Use two children under <code>div.navbar</code>.</p>
+			<div class="navbar">
+				<ul>
+					<li>
+						<h1 class="title">TITLE</h1>
+					</li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre>
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+
+			<p>here is an alternative with the site title on the left and links on the right.</p>
+
+			<div class="navbar">
+				<ul>
+					<li>
+						<h1 class="title">TITLE</h1>
+					</li>
+				</ul>
+
+				<ul>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre>
+						<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+			</div>
+
+
+
+
+			<h2>Navbar 3</h2>
+			<p>With three children the second child will be centered.
+				This example places the site title in the center.</p>
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+				</ul>
+
+				<ul>
+					<li>
+						<h1 class="title">TITLE</h1>
+					</li>
+				</ul>
+
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre>
+						<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+			</div>
+
+
+		</section>
+
+		<section id="fonts">
 			<h1>Headings</h1>
 			<h1>H1 Heading</h1>
 			<h2>H2 Heading</h2>
@@ -37,7 +195,7 @@
 
 			<pre>
 				<code>
-&lt;h1&gt;Headings 0&lt;/h1&gt;
+&lt;h1&gt;Headings&lt;/h1&gt;
 &lt;h1&gt;H1 Heading&lt;/h1&gt;
 &lt;h2&gt;H2 Heading&lt;/h2&gt;
 &lt;h3&gt;H3 Heading&lt;/h3&gt;
@@ -48,7 +206,7 @@
 			</pre>
 		</section>
 
-		<section id="type">
+		<section>
 			<h1>Paragraph styles</h1>
 			<p>This is the <strong>strong tag</strong> in a paragraph.
 				This is the <em>em tag in a paragraph</em>, elements such
@@ -64,6 +222,7 @@
 			</pre>
 		</section>
 		<!-- Forms -->
+		<h1>Forms</h1>
 		<section id="forms">
 			<h2>Buttons</h2>
 
@@ -247,204 +406,51 @@
 		<!-- Shapes -->
 		<section id="shapes">
 			<h1>Shapes</h1>
-			<div class="flex">
+			<div>
 				<!-- 2D Shapes -->
-				<div class="square"></div>
-				<div class="rectangle"></div>
-				<div class="diamond"></div>
-				<div class="parallelogram"></div>
-				<div class="triangle"></div>
-				<div class="scalene-triangle"></div>
-				<div class="right-triangle"></div>
-				<div class="pentagon"></div>
-				<div class="hexagon"></div>
-				<div class="heptagon"></div>
-				<div class="octagon"></div>
-				<div class="nonagon"></div>
-				<div class="circle"></div>
-				<div class="oval"></div>
+				<h3>2D Shape</h3>
+				<span class="flex">
+					<div class="square"></div>
+					<div class="rectangle"></div>
+					<div class="diamond"></div>
+					<div class="parallelogram"></div>
+					<div class="triangle"></div>
+					<div class="scalene-triangle"></div>
+					<div class="right-triangle"></div>
+					<div class="pentagon"></div>
+					<div class="hexagon"></div>
+					<div class="heptagon"></div>
+					<div class="octagon"></div>
+					<div class="nonagon"></div>
+					<div class="circle"></div>
+					<div class="oval"></div>
+				</span>
 
 				<!-- Special Shapes -->
-				<div class="heart"></div>
-				<div class="cross"></div>
-				<div class="arrow"></div>
-				<div class="star"></div>
-				<div class="crescent"></div>
+				<h3>Special Shapes</h3>
+				<span class="flex">
+					<div class="heart"></div>
+					<div class="cross"></div>
+					<div class="arrow"></div>
+					<div class="star"></div>
+					<div class="crescent"></div>
+				</span>
 
 				<!-- 3D Shapes -->
-				<div class="cube"></div>
-				<div class="cuboid"></div>
-				<div class="square-pyramid"></div>
-				<div class="triangular-prism"></div>
-				<div class="triangular-pyramid"></div>
-				<div class="cone"></div>
-				<div class="cylinder"></div>
-				<div class="torus"></div>
-				<div class="sphere"></div>
+				<h3>3D Shapes</h3>
+				<span class="flex">
+					<div class="cube"></div>
+					<div class="cuboid"></div>
+					<div class="square-pyramid"></div>
+					<div class="triangular-prism"></div>
+					<div class="triangular-pyramid"></div>
+					<div class="cone"></div>
+					<div class="cylinder"></div>
+					<div class="torus"></div>
+					<div class="sphere"></div>
+				</span>
 			</div>
 		</section>
-
-		<section id="navbar">
-			<h1>Navbar</h1>
-
-			<h2>Navbar 1</h2>
-			<p>A navbar with all elements on the left.</p>
-			<p>Use a single child under <code>div.navbar</code>.</p>
-
-			<div class="navbar">
-				<ol>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-				</ol>
-			</div>
-
-			<div>
-				<pre>
-					<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-					</code>
-				</pre>
-			</div>
-
-
-
-
-			<h2>Navbar 2</h2>
-			<p>A navbar with groups of elements on the left and the right.</p>
-			<p>Use two children under <code>div.navbar</code>.</p>
-			<div class="navbar">
-				<ul>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
-				</ul>
-
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<pre>
-					<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-					</code>
-				</pre>
-			</div>
-
-			<p>here is an alternative with the site title on the left and links on the right.</p>
-
-			<div class="navbar">
-				<ul>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-				</ul>
-
-				<ul>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<pre>
-						<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-						</code>
-					</pre>
-			</div>
-
-
-
-
-			<h2>Navbar 3</h2>
-			<p>With three children the second child will be centered.
-				This example places the site title in the center.</p>
-			<div class="navbar">
-				<ul>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
-				</ul>
-
-				<ul>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-				</ul>
-
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<pre>
-						<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-						</code>
-					</pre>
-			</div>
-
-
-		</section>
-
-
 
 		<section id="footers">
 			<h2>Page Footer</h2>
@@ -522,19 +528,18 @@
 			<li>
 				<h3>Content</h3>
 			</li>
-			<li><a href="#colors">Colors</a></li>
 			<li><a href="#navbar">Navbar</a></li>
-			<li><a href="#headings">Headings</a></li>
-			<li><a href="#type">Type</a></li>
-			<li><a href="#forms">forms</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#shapes">Shapes</a></li>
 		</ul>
 
 		<ul>
 			<li>
 				<h3>Resources</h3>
 			</li>
-			<li><a href="">CSS Tricks</a></li>
-			<li><a href="">CSS Tricks</a></li>
+			<li><a href="css-tricks.com/">CSS Tricks</a></li>
+			<li><a href="sass-lang.com">SCSS Lang</a></li>
 		</ul>
 
 		<ul>

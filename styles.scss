@@ -317,7 +317,7 @@ label {
 
             div:hover,
             span:hover {
-                border-color: invert($color);
+                border: 1px solid invert($color);
             }
 
             div:before,
@@ -373,7 +373,7 @@ label {
 
             div:hover,
             span:hover {
-                border-color: invert($color);
+                border: 1px solid invert($color);
             }
 
             input:checked~div,
@@ -440,7 +440,7 @@ label {
 
             div:hover,
             span:hover {
-                border-color: invert($color);
+                border: 1px solid invert($color);
             }
 
             input:checked~div,
@@ -462,7 +462,7 @@ label {
 
             & div:after,
             & span:after {
-                top: 3.5px;
+                top: 3px;
                 left: 3.35px;
                 width: 18px;
                 height: 18px;
