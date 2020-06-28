@@ -182,40 +182,39 @@ form {
 input {
     @include type;
 
-    &[type=text] {
+    // &[type=text] {
 
-    }
+    // }
 
-    &[type=email] {
+    // &[type=email] {
 
-    }
+    // }
 
-    &[type=password] {
+    // &[type=password] {
 
-    }
+    // }
 
-    &[type=date] {
+    // &[type=date] {
 
-    }
+    // }
 
-    &[type=time] {
+    // &[type=time] {
 
-    }
+    // }
 
-    &[type=month] {
+    // &[type=month] {
 
-    }
+    // }
 
-    &[type=week] {
+    // &[type=week] {
 
-    }
+    // }
 
-    &[type=datetime-local] {
+    // &[type=datetime-local] {
 
-    }
+    // }
 
     &[type=color] {
-
         width: 37px;
         height: 35px;
         border: none;
@@ -234,18 +233,15 @@ input {
     }
 
     &[type=file] {
-
         border: none;
     }
 
     &[type=range] {
-
         border: none;
         padding: 0;
     }
 
     &[type=search] {
-
         background-image: url('../assests/icons/search.png');
         background-position: 10px;
         background-size: 18px;
@@ -258,13 +254,13 @@ input {
         width: 100%;
     }
 
-    &[type=number] {
+    // &[type=number] {
 
-    }
+    // }
 
-    &[type=url] {
+    // &[type=url] {
 
-    }
+    // }
 
     &:focus {
         border-color: invert($color);
@@ -288,8 +284,10 @@ $version: (
 );
 
 label {
+
     @each $version,
     $value in $version {
+
         // Switch
         &.switch-v#{$version} {
             position: relative;
@@ -311,9 +309,15 @@ label {
                 right: 0;
                 bottom: 0;
                 color: invert($color);
+                border: 1px solid black;
                 background-color: #ccc - $value;
                 border-radius: 34px;
-                transition: .4s;
+                transition: 0.4s;
+            }
+
+            div:hover,
+            span:hover {
+                border-color: invert($color);
             }
 
             div:before,
@@ -326,7 +330,7 @@ label {
                 bottom: 4px;
                 background-color: white - $value;
                 border-radius: 50%;
-                transition: .4s;
+                transition: 0.4s;
             }
 
             input:checked+div,
@@ -344,7 +348,8 @@ label {
         &.checkbox-v#{$version} {
             position: relative;
             display: inline-block;
-            // font-size: 22px;
+            color: white;
+            font-size: 22px;
             width: 34px;
             height: 34px;
             outline: none !important;
@@ -361,38 +366,110 @@ label {
                 left: 0;
                 right: 0;
                 bottom: 0;
+                border: 1px solid black;
                 background-color: #ccc - $value;
                 transition: 0.4s;
             }
 
-            input:checked~div, 
+            div:hover,
+            span:hover {
+                border-color: invert($color);
+            }
+
+            input:checked~div,
             input:checked~span {
                 background-color: $value;
             }
 
             div:after,
             span:after {
-                content: ""; 
+                content: "";
                 position: absolute;
             }
 
             input:checked~div:after,
             input:checked~span:after {
-                display: block;
-                left: 10px;
-                top: 2.5px;
-                width: 10px;
-                height: 18px;
-                border-right: 4px solid white;
-                border-bottom: 4px solid white;
-                transform: rotate(45deg);
+                @if $version==3 {
+                    display: block;
+                    left: 10px;
+                    top: 5px;
+                    content: "X";
+                }
+
+                @else {
+                    display: block;
+                    left: 10px;
+                    top: 5px;
+                    /* text */
+                    // content: "√";
+                    /* hand made */
+                    width: 7px;
+                    height: 15px;
+                    border-right: 4px solid white;
+                    border-bottom: 4px solid white;
+                    transform: rotate(45deg);
+                    /* icon */
+                    // background-image: url(../assests/icons/check.png);
+                    // background-repeat: no-repeat;
+                    // background-size: 20px;
+                }
             }
         }
 
         // Radio
-        // &.radio-v#{$version} {
+        &.radio-v#{$version} {
+            display: block;
+            position: relative;
+            font-size: 22px;
 
-        // }
+            input {
+                visibility: hidden;
+            }
+
+            div,
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+
+            div:hover,
+            span:hover {
+                border-color: invert($color);
+            }
+
+            input:checked~div,
+            input:checked~span {
+                background-color: invert(white - $value);
+            }
+
+            div:after,
+            span:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            input:checked~div:after,
+            input:checked~span:after {
+                display: block;
+            }
+
+            & div:after,
+            & span:after {
+                top: 3.5px;
+                left: 3.35px;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: invert(#ccc - $value);
+            }
+        }
     }
 }
 
