@@ -1,4 +1,5 @@
 @import "./partials/components";
+@import "./fonts";
 
 /* Forms */
 button {
@@ -9,7 +10,7 @@ button {
     background-color: $color + blue;
     padding: 1em;
 
-    &.delete {
+    &.danger {
         border-color: lightcoral;
         background-color: $color + red;
     }
@@ -19,10 +20,11 @@ button {
         background-color: $color + rgb(150, 150, 0);
     }
 
-    &.go {
+    &.success {
         border-color: lightgreen;
         background-color: $color + green;
     }
+    // secondary, info, light, and dark
 }
 
 form {
@@ -46,40 +48,41 @@ form {
 }
 
 input {
-    &[type=text] {
-        @include type;
-    }
+    @include type;
 
-    &[type=email] {
-        @include type;
-    }
+    // &[type=text] {
 
-    &[type=password] {
-        @include type;
-    }
+    // }
 
-    &[type=date] {
-        @include type;
-    }
+    // &[type=email] {
 
-    &[type=time] {
-        @include type;
-    }
+    // }
 
-    &[type=month] {
-        @include type;
-    }
+    // &[type=password] {
 
-    &[type=week] {
-        @include type;
-    }
+    // }
 
-    &[type=datetime-local] {
-        @include type;
-    }
+    // &[type=date] {
+
+    // }
+
+    // &[type=time] {
+
+    // }
+
+    // &[type=month] {
+
+    // }
+
+    // &[type=week] {
+
+    // }
+
+    // &[type=datetime-local] {
+
+    // }
 
     &[type=color] {
-        @include type;
         width: 37px;
         height: 35px;
         border: none;
@@ -98,22 +101,20 @@ input {
     }
 
     &[type=file] {
-        @include type;
         border: none;
     }
 
     &[type=range] {
-        @include type;
         border: none;
         padding: 0;
     }
 
     &[type=search] {
-        @include type;
-        background-image: url('searchicon.png');
-        background-position: 10px 10px;
+        background-image: url('../assests/icons/search.png');
+        background-position: 10px;
+        background-size: 18px;
         background-repeat: no-repeat;
-        padding-left: 40px;
+        padding-left: 35px;
         transition: width 0.4s ease-in-out;
     }
 
@@ -121,25 +122,15 @@ input {
         width: 100%;
     }
 
-    &[type=number] {
-        @include type;
-    }
+    // &[type=number] {
 
-    &[type=url] {
-        @include type;
-    }
+    // }
 
-    &[type=text]:focus,
-    &[type=email]:focus,
-    &[type=password]:focus,
-    &[type=date]:focus,
-    &[type=time]:focus,
-    &[type=month]:focus,
-    &[type=week]:focus,
-    &[type=datetime-local]:focus,
-    &[type=search]:focus,
-    &[type=number]:focus,
-    &[type=url]:focus {
+    // &[type=url] {
+
+    // }
+
+    &:focus {
         border-color: invert($color);
     }
 }
@@ -164,6 +155,8 @@ label {
 
     @each $version,
     $value in $version {
+
+        // Switch
         &.switch-v#{$version} {
             position: relative;
             display: inline-block;
@@ -184,9 +177,15 @@ label {
                 right: 0;
                 bottom: 0;
                 color: invert($color);
+                border: 1px solid black;
                 background-color: #ccc - $value;
                 border-radius: 34px;
-                transition: .4s;
+                transition: 0.4s;
+            }
+
+            div:hover,
+            span:hover {
+                border: 1px solid invert($color);
             }
 
             div:before,
@@ -199,17 +198,12 @@ label {
                 bottom: 4px;
                 background-color: white - $value;
                 border-radius: 50%;
-                transition: .4s;
+                transition: 0.4s;
             }
 
             input:checked+div,
             input:checked+span {
                 background-color: $value;
-            }
-
-            input:focus+div,
-            input:focus+span {
-                box-shadow: 0 0 1px $value;
             }
 
             input:checked+div:before,
@@ -218,12 +212,14 @@ label {
             }
         }
 
+        // Checkbox
         &.checkbox-v#{$version} {
             position: relative;
             display: inline-block;
+            color: white;
+            font-size: 22px;
             width: 34px;
             height: 34px;
-            border: 4px solid black;
             outline: none !important;
 
             input {
@@ -238,31 +234,109 @@ label {
                 left: 0;
                 right: 0;
                 bottom: 0;
+                border: 1px solid black;
                 background-color: #ccc - $value;
-                transition: .4s;
+                transition: 0.4s;
             }
 
-            input:checked+div,
-            input:checked+span {
+            div:hover,
+            span:hover {
+                border: 1px solid invert($color);
+            }
+
+            input:checked~div,
+            input:checked~span {
                 background-color: $value;
             }
 
-            input:checked+div:after,
-            input:checked+span:after {
-                top: 5px;
-                left: 9px;
-                width: 50px;
-                height: 100px;
-                display: block;
-                background-color: white;
-                // border-right: 3px solid white;
-                // border-bottom: 3px solid white;
-                transform: rotate(45deg);
+            div:after,
+            span:after {
+                content: "";
+                position: absolute;
+            }
+
+            input:checked~div:after,
+            input:checked~span:after {
+                @if $version==3 {
+                    display: block;
+                    left: 10px;
+                    top: 5px;
+                    content: "X";
+                }
+
+                @else {
+                    display: block;
+                    left: 10px;
+                    top: 5px;
+                    /* text */
+                    // content: "√";
+                    /* hand made */
+                    width: 7px;
+                    height: 15px;
+                    border-right: 4px solid white;
+                    border-bottom: 4px solid white;
+                    transform: rotate(45deg);
+                    /* icon */
+                    // background-image: url(../assests/icons/check.png);
+                    // background-repeat: no-repeat;
+                    // background-size: 20px;
+                }
             }
         }
 
-        // &.radio-v#{$version} {
+        // Radio
+        &.radio-v#{$version} {
+            display: block;
+            position: relative;
+            font-size: 22px;
 
-        // }
+            input {
+                visibility: hidden;
+            }
+
+            div,
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+
+            div:hover,
+            span:hover {
+                border: 1px solid invert($color);
+            }
+
+            input:checked~div,
+            input:checked~span {
+                background-color: invert(white - $value);
+            }
+
+            div:after,
+            span:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            input:checked~div:after,
+            input:checked~span:after {
+                display: block;
+            }
+
+            & div:after,
+            & span:after {
+                top: 3px;
+                left: 3.35px;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: invert(#ccc - $value);
+            }
+        }
     }
 }
