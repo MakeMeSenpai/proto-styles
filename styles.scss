@@ -143,7 +143,7 @@ button {
     background-color: $color + blue;
     padding: 1em;
 
-    &.delete {
+    &.danger {
         border-color: lightcoral;
         background-color: $color + red;
     }
@@ -153,10 +153,11 @@ button {
         background-color: $color + rgb(150, 150, 0);
     }
 
-    &.go {
+    &.success {
         border-color: lightgreen;
         background-color: $color + green;
     }
+    // secondary, info, light, and dark
 }
 
 form {
