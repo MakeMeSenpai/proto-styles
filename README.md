@@ -4,9 +4,9 @@ sheet. As more progress is made, so will more documentation!
 
 ## Index:
 1. [Checklist](#checklist)
-    1. [MVP Todo:](#mvp-todo:)
-    2. [Potential Features:](#potential-features:)
-    3. [Previous Updates:](#previous-updates:)
+    1. [MVP Todo:](#mvp-todo)
+    2. [Potential Features:](#potential-features)
+    3. [Previous Updates:](#previous-updates)
 2. [Components](#components)
     1. [Body](#body)
 3. [Fonts](#fonts)
@@ -15,6 +15,9 @@ sheet. As more progress is made, so will more documentation!
     3. [Lists and Links](#lists-and-links)
     4. [Code](#code)
 4. [Forms](#forms)
+    1. [Buttons](#buttons)
+    2. [Types and Input](#types-and-input)
+    3. [Switch and Click](#switch-and-click)
 5. [Shapes](#shapes)
 6. [MISC.](#misc.)
 7. [Conclusion](#conclusion)
