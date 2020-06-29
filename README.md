@@ -8,7 +8,7 @@ sheet. As more progress is made, so will more documentation!
 3. [Fonts](#Fonts)
 4. [Forms](#Forms)
 5. [Shapes](#Shapes)
-6. [MISC](#MISC)
+6. [MISC.](#MISC.)
 7. [Conclusion](#Conclusion)
 
 ___
@@ -18,7 +18,7 @@ ___
     - [x] Named your framework
     - [x] Made a repo
     - [x] Stretch: organize files in folders
-    - Font styles styled basic text elements
+- Font styles styled basic text elements
     - [x] Defined a font stack on the body
     - [x] Styled headings: h1-6
     - [x] Styled inline elements: strong, em, code
@@ -70,6 +70,7 @@ for warning, info, action, etc.
 
 ## MISC.
 
+___
 ## Conclusion
 If you'd like to learn some scss for yourself, check out example.scss for my notes, as well you can check out
 this article on sass-lang. https://sass-lang.com/documentation/at-rules
