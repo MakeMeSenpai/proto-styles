@@ -5,13 +5,13 @@ body.light-mode {
 }
 
 body.lighter-mode {
-  color: #005700;
-  background-color: #bbff86;
+  color: #4f0000;
+  background-color: #ff85c0;
 }
 
 body.darker-mode {
-  color: #bbff86;
-  background-color: #005700;
+  color: #ff85c0;
+  background-color: #4f0000;
 }
 
 body.dark-mode {
@@ -21,7 +21,7 @@ body.dark-mode {
 
 /* Fonts */
 h6 {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -34,11 +34,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bf2df4;
+  color: #35f5ba;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #ffebff;
+  text-decoration-color: #f3ffff;
 }
 
 h6.title {
@@ -46,7 +46,7 @@ h6.title {
 }
 
 h5 {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -59,11 +59,11 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bf2df4;
+  color: #35f5ba;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: #fff0ff;
+  text-decoration-color: #f8ffff;
 }
 
 h5.title {
@@ -71,7 +71,7 @@ h5.title {
 }
 
 h4 {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -84,11 +84,11 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bf2df4;
+  color: #35f5ba;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: #fff8ff;
+  text-decoration-color: white;
 }
 
 h4.title {
@@ -96,7 +96,7 @@ h4.title {
 }
 
 h3 {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -109,7 +109,7 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bf2df4;
+  color: #35f5ba;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
@@ -121,7 +121,7 @@ h3.title {
 }
 
 h2 {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -134,7 +134,7 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bf2df4;
+  color: #35f5ba;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
@@ -146,7 +146,7 @@ h2.title {
 }
 
 h1 {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -159,7 +159,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #bf2df4;
+  color: #35f5ba;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -171,7 +171,7 @@ h1.title {
 }
 
 p {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -186,42 +186,8 @@ p {
   letter-spacing: inherit;
 }
 
-ol {
-  color: #40d20b;
-  font-size: 14px;
-  font-weight: 2px;
-  text-align: left;
-  font-kerning: auto;
-  font-family: sans-serif;
-  text-align-last: auto;
-  text-transform: capitalize;
-  text-orientation: sideways;
-  font-stretch: semi-expanded;
-  text-underline-position: above;
-  font-variant-east-asian: simplified;
-  list-style-type: upper-roman;
-  font-size: larger;
-}
-
-ul {
-  color: #40d20b;
-  font-size: 14px;
-  font-weight: 2px;
-  text-align: left;
-  font-kerning: auto;
-  font-family: sans-serif;
-  text-align-last: auto;
-  text-transform: capitalize;
-  text-orientation: sideways;
-  font-stretch: semi-expanded;
-  text-underline-position: above;
-  font-variant-east-asian: simplified;
-  list-style-type: circle;
-  font-size: x-large;
-}
-
 strong {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -237,7 +203,7 @@ strong {
 }
 
 em {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -254,8 +220,73 @@ em {
   text-decoration: underline;
 }
 
+ol {
+  color: #ca0a45;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  list-style-type: upper-roman;
+  font-size: larger;
+}
+
+ul {
+  color: #ca0a45;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  list-style-type: circle;
+  font-size: x-large;
+}
+
+abbr {
+  position: relative;
+}
+
+abbr:hover {
+  text-decoration: none;
+  color: #4c0000;
+}
+
+a {
+  color: #ca0a45;
+  font-size: 14px;
+  font-weight: 2px;
+  text-align: left;
+  font-kerning: auto;
+  font-family: sans-serif;
+  text-align-last: auto;
+  text-transform: capitalize;
+  text-orientation: sideways;
+  font-stretch: semi-expanded;
+  text-underline-position: above;
+  font-variant-east-asian: simplified;
+  text-decoration: none;
+  color: #4c0000;
+}
+
+a:hover {
+  text-decoration: double;
+  color: #ffa389;
+}
+
 code {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -268,46 +299,23 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #84ff4f;
-  background-color: #002d00;
+  color: #ffa389;
+  background-color: #250000;
   display: inline-block;
   padding: 1em;
 }
 
-abbr {
-  position: relative;
-}
-
-abbr:hover {
-  text-decoration: none;
-  color: #005400;
-}
-
-a {
-  color: #40d20b;
-  font-size: 14px;
-  font-weight: 2px;
-  text-align: left;
-  font-kerning: auto;
-  font-family: sans-serif;
-  text-align-last: auto;
-  text-transform: capitalize;
-  text-orientation: sideways;
-  font-stretch: semi-expanded;
-  text-underline-position: above;
-  font-variant-east-asian: simplified;
-  text-decoration: none;
-  color: #005400;
-}
-
-a:hover {
-  text-decoration: double;
-  color: #84ff4f;
-}
-
 /* Forms */
+form {
+  padding: 1rem;
+  align-items: center;
+  border: 4px solid black;
+  color: #002900;
+  background-color: #ffd6ff;
+}
+
 button {
-  color: #40d20b;
+  color: #ca0a45;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -321,32 +329,24 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #bf2df4;
-  background-color: #40d2ff;
+  color: #35f5ba;
+  background-color: #ca0aff;
   padding: 1em;
 }
 
-button.delete {
+button.danger {
   border-color: lightcoral;
-  background-color: #ffd20b;
+  background-color: #ff0a45;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #d6ff0b;
+  background-color: #ffa045;
 }
 
 button.success {
   border-color: lightgreen;
-  background-color: #40ff0b;
-}
-
-form {
-  padding: 1rem;
-  align-items: center;
-  border: 4px solid black;
-  color: #000028;
-  background-color: #ffffd7;
+  background-color: #ca8a45;
 }
 
 input {
@@ -402,7 +402,7 @@ input[type=search]:focus {
 }
 
 input:focus {
-  border-color: #bf2df4;
+  border-color: #35f5ba;
 }
 
 textarea {
@@ -420,7 +420,7 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #bf2df4;
+  border-color: #35f5ba;
 }
 
 label.switch-v1 {
@@ -443,7 +443,7 @@ label.switch-v1 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #bf2df4;
+  color: #35f5ba;
   border: 1px solid black;
   background-color: #ab3600;
   border-radius: 34px;
@@ -452,7 +452,7 @@ label.switch-v1 span {
 
 label.switch-v1 div:hover,
 label.switch-v1 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.switch-v1 div:before,
@@ -507,7 +507,7 @@ label.checkbox-v1 span {
 
 label.checkbox-v1 div:hover,
 label.checkbox-v1 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.checkbox-v1 input:checked ~ div,
@@ -560,7 +560,7 @@ label.radio-v1 span {
 
 label.radio-v1 div:hover,
 label.radio-v1 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.radio-v1 input:checked ~ div,
@@ -583,7 +583,7 @@ label.radio-v1 input:checked ~ span:after {
 label.radio-v1 div:after,
 label.radio-v1 span:after {
   top: 3px;
-  left: 3.35px;
+  left: 3.45px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -610,7 +610,7 @@ label.switch-v2 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #bf2df4;
+  color: #35f5ba;
   border: 1px solid black;
   background-color: #cc0976;
   border-radius: 34px;
@@ -619,7 +619,7 @@ label.switch-v2 span {
 
 label.switch-v2 div:hover,
 label.switch-v2 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.switch-v2 div:before,
@@ -674,7 +674,7 @@ label.checkbox-v2 span {
 
 label.checkbox-v2 div:hover,
 label.checkbox-v2 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.checkbox-v2 input:checked ~ div,
@@ -727,7 +727,7 @@ label.radio-v2 span {
 
 label.radio-v2 div:hover,
 label.radio-v2 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.radio-v2 input:checked ~ div,
@@ -750,7 +750,7 @@ label.radio-v2 input:checked ~ span:after {
 label.radio-v2 div:after,
 label.radio-v2 span:after {
   top: 3px;
-  left: 3.35px;
+  left: 3.45px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -777,7 +777,7 @@ label.switch-v3 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #bf2df4;
+  color: #35f5ba;
   border: 1px solid black;
   background-color: #00c8a0;
   border-radius: 34px;
@@ -786,7 +786,7 @@ label.switch-v3 span {
 
 label.switch-v3 div:hover,
 label.switch-v3 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.switch-v3 div:before,
@@ -841,7 +841,7 @@ label.checkbox-v3 span {
 
 label.checkbox-v3 div:hover,
 label.checkbox-v3 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.checkbox-v3 input:checked ~ div,
@@ -887,7 +887,7 @@ label.radio-v3 span {
 
 label.radio-v3 div:hover,
 label.radio-v3 span:hover {
-  border: 1px solid #bf2df4;
+  border: 1px solid #35f5ba;
 }
 
 label.radio-v3 input:checked ~ div,
@@ -910,7 +910,7 @@ label.radio-v3 input:checked ~ span:after {
 label.radio-v3 div:after,
 label.radio-v3 span:after {
   top: 3px;
-  left: 3.35px;
+  left: 3.45px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
