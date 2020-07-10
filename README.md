@@ -165,7 +165,8 @@ It is required that you use the label tag in order for these switch and click bu
 - Radio buttons also have a custom design, inverse to it's default. Using an open circle and themed colors. You can use different versions together as well. However, this option does not contain an inverse option.```<lable class="radio-v3"><input type="radio"></input></lable>```
 
 ## Shapes
-- This is a idea, and is not yet in development.
+These are made with javascript webcomponents. Custom tags makes it so that the users can have shorter html files and easily use tags such as ```<square></square>``` to create awesome shapes!
+- Still in very early development.
 
 ## MISC.
 - This section is empty! (But not for long.)
