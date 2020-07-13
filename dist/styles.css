@@ -5,13 +5,13 @@ body.light-mode {
 }
 
 body.lighter-mode {
-  color: #4f0000;
-  background-color: #ff85c0;
+  color: #6f4a11;
+  background-color: white;
 }
 
 body.darker-mode {
-  color: #ff85c0;
-  background-color: #4f0000;
+  color: white;
+  background-color: #6f4a11;
 }
 
 body.dark-mode {
@@ -19,9 +19,16 @@ body.dark-mode {
   background-color: black;
 }
 
+.flex {
+  display: flex;
+  flex: auto;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
 /* Fonts */
 h6 {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -34,11 +41,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #35f5ba;
+  color: #153a73;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #f3ffff;
+  text-decoration-color: #d3f8ff;
 }
 
 h6.title {
@@ -46,7 +53,7 @@ h6.title {
 }
 
 h5 {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -59,11 +66,11 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #35f5ba;
+  color: #153a73;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: #f8ffff;
+  text-decoration-color: #d8fdff;
 }
 
 h5.title {
@@ -71,7 +78,7 @@ h5.title {
 }
 
 h4 {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -84,11 +91,11 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #35f5ba;
+  color: #153a73;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: lightcyan;
 }
 
 h4.title {
@@ -96,7 +103,7 @@ h4.title {
 }
 
 h3 {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -109,11 +116,11 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #35f5ba;
+  color: #153a73;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: #ecffff;
 }
 
 h3.title {
@@ -121,7 +128,7 @@ h3.title {
 }
 
 h2 {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -134,7 +141,7 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #35f5ba;
+  color: #153a73;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
@@ -146,7 +153,7 @@ h2.title {
 }
 
 h1 {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -159,7 +166,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #35f5ba;
+  color: #153a73;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -171,7 +178,7 @@ h1.title {
 }
 
 p {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -187,7 +194,7 @@ p {
 }
 
 strong {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -203,7 +210,7 @@ strong {
 }
 
 em {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -221,7 +228,7 @@ em {
 }
 
 ol {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -238,7 +245,7 @@ ol {
 }
 
 ul {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -260,11 +267,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #4c0000;
+  color: #6c470e;
 }
 
 a {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -277,16 +284,16 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #4c0000;
+  color: #6c470e;
 }
 
 a:hover {
   text-decoration: double;
-  color: #ffa389;
+  color: #ffffd0;
 }
 
 code {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -299,8 +306,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #ffa389;
-  background-color: #250000;
+  color: #ffffd0;
+  background-color: #452000;
   display: inline-block;
   padding: 1em;
 }
@@ -310,12 +317,12 @@ form {
   padding: 1rem;
   align-items: center;
   border: 4px solid black;
-  color: #002900;
-  background-color: #ffd6ff;
+  color: black;
+  background-color: white;
 }
 
 button {
-  color: #ca0a45;
+  color: #eac58c;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -329,24 +336,24 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #35f5ba;
-  background-color: #ca0aff;
+  color: #153a73;
+  background-color: #eac5ff;
   padding: 1em;
 }
 
 button.danger {
   border-color: lightcoral;
-  background-color: #ff0a45;
+  background-color: #ffc58c;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #ffa045;
+  background-color: #ffff8c;
 }
 
 button.success {
   border-color: lightgreen;
-  background-color: #ca8a45;
+  background-color: #eaff8c;
 }
 
 input {
@@ -402,7 +409,7 @@ input[type=search]:focus {
 }
 
 input:focus {
-  border-color: #35f5ba;
+  border-color: #153a73;
 }
 
 textarea {
@@ -420,7 +427,7 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #35f5ba;
+  border-color: #153a73;
 }
 
 label.switch-v1 {
@@ -443,7 +450,7 @@ label.switch-v1 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #35f5ba;
+  color: #153a73;
   border: 1px solid black;
   background-color: #ab3600;
   border-radius: 34px;
@@ -452,7 +459,7 @@ label.switch-v1 span {
 
 label.switch-v1 div:hover,
 label.switch-v1 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.switch-v1 div:before,
@@ -507,7 +514,7 @@ label.checkbox-v1 span {
 
 label.checkbox-v1 div:hover,
 label.checkbox-v1 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.checkbox-v1 input:checked ~ div,
@@ -560,7 +567,7 @@ label.radio-v1 span {
 
 label.radio-v1 div:hover,
 label.radio-v1 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.radio-v1 input:checked ~ div,
@@ -610,7 +617,7 @@ label.switch-v2 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #35f5ba;
+  color: #153a73;
   border: 1px solid black;
   background-color: #cc0976;
   border-radius: 34px;
@@ -619,7 +626,7 @@ label.switch-v2 span {
 
 label.switch-v2 div:hover,
 label.switch-v2 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.switch-v2 div:before,
@@ -674,7 +681,7 @@ label.checkbox-v2 span {
 
 label.checkbox-v2 div:hover,
 label.checkbox-v2 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.checkbox-v2 input:checked ~ div,
@@ -727,7 +734,7 @@ label.radio-v2 span {
 
 label.radio-v2 div:hover,
 label.radio-v2 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.radio-v2 input:checked ~ div,
@@ -777,7 +784,7 @@ label.switch-v3 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #35f5ba;
+  color: #153a73;
   border: 1px solid black;
   background-color: #00c8a0;
   border-radius: 34px;
@@ -786,7 +793,7 @@ label.switch-v3 span {
 
 label.switch-v3 div:hover,
 label.switch-v3 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.switch-v3 div:before,
@@ -841,7 +848,7 @@ label.checkbox-v3 span {
 
 label.checkbox-v3 div:hover,
 label.checkbox-v3 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.checkbox-v3 input:checked ~ div,
@@ -887,7 +894,7 @@ label.radio-v3 span {
 
 label.radio-v3 div:hover,
 label.radio-v3 span:hover {
-  border: 1px solid #35f5ba;
+  border: 1px solid #153a73;
 }
 
 label.radio-v3 input:checked ~ div,
@@ -917,5 +924,4 @@ label.radio-v3 span:after {
   background: #ff375f;
 }
 
-/* Shapes */
 /* Misc. */

@@ -35,6 +35,14 @@ body {
 // add navbar
 // add main
 // add section
+
+.flex {
+    display: flex;
+    flex: auto;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
 // add footer
 
 /* Fonts */
@@ -461,7 +469,7 @@ label {
                 content: "";
                 position: absolute;
                 display: none;
-            }
+            } 
 
             input:checked~div:after,
             input:checked~span:after {
