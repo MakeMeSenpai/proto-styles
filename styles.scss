@@ -38,9 +38,9 @@ body {
 
 .flex {
     display: flex;
-    flex: auto;
+    flex-wrap: wrap;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 // add footer
