@@ -32,15 +32,80 @@ body {
     }
 }
 
-// add navbar
+.navbar {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
 // add main
 // add section
 
+.ticker-tape {
+    margin-top: 25px;
+    margin-left: -250px;
+    width: 1200px;
+    border: 4px dashed green;
+    background-color: black;
+    overflow: hidden;
+    padding: -25px;
+    h1 {
+        color: rgb(50, 195, 50);
+        font-style: normal;
+        text-decoration: none;
+        transform: translate(-1150px, 0px);
+        animation-name: ticking;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes ticking {
+    0% {
+        transform: translate(-1150px, 0px);
+    }
+    75% {
+        transform: translate(1250px, 0px);
+    }
+    85% {
+        transform: translate(1250px, 500px);
+    }
+    95% {
+        transform: translate(-1150px, 500px);
+    }
+    100% {
+        transform: translate(-1150px, 0px);
+    }
+}
+
+.card {
+    background-color: $color + #999999;
+    display: inline-block;
+    border: 2px solid black;
+    margin-left: 7px;
+    margin-right: 7px;
+    img {
+        height: 200px;
+    }
+}
+
+//edited for card**************
 .flex {
+    margin-top: 15px;
+    margin-left: -350px;
+    margin-bottom: -5px;
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    // flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+//edit for test *****
+@for $i from 1 through 100 {
+    .color-sample-#{$i} {
+        background-color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));// rgb($i * 2.55, $i * 2.55, $i * 2.55);
+    }
 }
 
 // add footer

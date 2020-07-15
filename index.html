@@ -1,561 +1,287 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<title>Tester</title>
+		<link rel="stylesheet" href="./dist/styles.css" />
+	</head>
+	<body class="lighter-mode">
 
-<head>
-	<title>Proto-styles Framework</title>
-	<link rel="stylesheet" href="./dist/styles.css" />
-</head>
+		<!-- Base Styles - Set the base styles for the page -->
 
-<body class="lighter-mode">
+		<main>
 
-	<div class="navbar">
-		<ul>
-			<li>
-				<h1 class="title">Proto-styles Framework V.0.2.8</h1>
-			</li>
-			<li><a href="#navbar">Navbar</a></li>
-			<li><a href="#fonts">Fonts</a></li>
-			<li><a href="#forms">Forms</a></li>
-			<li><a href="#shapes">Shapes</a></li>
-			<!-- <li><a href="#colors"></a></li> -->
-			<li><a href="#footer">Footer</a></li>
-		</ul>
-		<ul>
-			<li><a href="https://github.com/MakeMeSenpai/proto-styles">GitHub</a></li>
-		</ul>
-	</div>
+			<!-- navbar - Style the navbar -->
+			<section id="nav">
+				<header>
+					<nav class="navbar">
+						<a href="#">Color.com</a>
+						<a href="#about">About</a>
+						<a href="#popular">Popular</a>
+						<a href="#swatches">Swatches</a>
+						<a href="#cart">Order</a>
+						<a href="#contact">Contact</a>
+					</nav>
+				</header>
+			</section>
 
-	<div class="container">
-		<section id="navbar">
-			<h1>Navbar</h1>
+			<!-- banner -->
+			<section class="ticker-tape">
+				<h1>...Color.com is awesome...</h1>
+			</section>
 
-			<h2>Navbar 1</h2>
-			<p>A navbar with all elements on the left.</p>
-			<p>Use a single child under <code>div.navbar</code>.</p>
 
-			<div class="navbar">
-				<ol>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-				</ol>
-			</div>
+			<!-- section about - -->
+			<section id="about">
+				<header>
+					<h1>What is color?</h1>
+				</header>
+				<p><strong>Color</strong> (American English), or colour (Commonwealth English), is the characteristic of visual perception described through color categories, with names such as red, orange, yellow, green, blue, or purple. This perception of color derives from the stimulation of photoreceptor cells (in particular cone cells in the human eye and other vertebrate eyes) by electromagnetic radiation (in the visible spectrum in the case of humans).</p>
+				<p>Color is really important for making great <abbr title="Cascading Style Sheets">CSS</abbr> styles. <a href="#">Color.com is the most amazing place to get your colors.</a></p>
+			</section>
 
-			<div>
-				<pre>
-					<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-					</code>
-				</pre>
-			</div>
+
+			
+			<!-- Section Color Cards - This section contains three cards Style these -->
+			<section id="popular" class="flex">
+				<div class="card">
+					<img src="./assests/images/600px-64_365_Color_Macro.jpg">
+					<p>Colored Pencils</p>
+				</div>
+
+				<div class="card">
+					<img src="./assests/images/600px-Nasir-al_molk.jpg">
+					<p>Color effect—sunlight shining through stained glass onto carpet (Nasir ol Molk Mosque located in Shiraz, Iran)</p>
+				</div>
+
+				<div class="card">
+					<img src="./assests/images/600px-Chubb_Illusion.png">
+					<p>Colors can appear different depending on their surrounding colors and shapes. The two small squares have exactly the same color, but the right one looks slightly darker, the Chubb illusion.</p>
+				</div>
+			</section>
 
 
 
+			<!-- Section Color Swatches - This section contains -->
+			<section id="swatches">
+				<header>
+					<h1>Colors</h1>
+					<p>At color.com we offer a range of high quality colors.</p>
+				</header>
+				<div class="swatches">
+					
+				</div>
+			</section>
 
-			<h2>Navbar 2</h2>
-			<p>A navbar with groups of elements on the left and the right.</p>
-			<p>Use two children under <code>div.navbar</code>.</p>
-			<div class="navbar">
-				<ul>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
+			<section id="cart">
+				<header>
+					<h1>Cart</h1>
+				</header>
+
+				<ul id="items">
+					<!-- Items here -->
 				</ul>
-
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<pre>
-					<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
 	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-					</code>
-				</pre>
-			</div>
-
-			<p>here is an alternative with the site title on the left and links on the right.</p>
-
-			<div class="navbar">
-				<ul>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-				</ul>
-
-				<ul>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<pre>
-						<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-						</code>
-					</pre>
-			</div>
-
-
-
-
-			<h2>Navbar 3</h2>
-			<p>With three children the second child will be centered.
-				This example places the site title in the center.</p>
-			<div class="navbar">
-				<ul>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
-				</ul>
-
-				<ul>
-					<li>
-						<h1 class="title">TITLE</h1>
-					</li>
-				</ul>
-
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<pre>
-						<code>
-&lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-						</code>
-					</pre>
-			</div>
-
-
-		</section>
-
-		<section id="fonts">
-			<h1>Fonts</h1>
-			<h1>Headings</h1>
-			<h1>H1 Heading</h1>
-			<h2>H2 Heading</h2>
-			<h3>H3 Heading</h3>
-			<h4>H4 Heading</h4>
-			<h5>H5 Heading</h5>
-			<h6>H6 Heading</h6>
-
-			<pre>
-				<code>
-&lt;h1&gt;Headings&lt;/h1&gt;
-&lt;h1&gt;H1 Heading&lt;/h1&gt;
-&lt;h2&gt;H2 Heading&lt;/h2&gt;
-&lt;h3&gt;H3 Heading&lt;/h3&gt;
-&lt;h4&gt;H4 Heading&lt;/h4&gt;
-&lt;h5&gt;H5 Heading&lt;/h5&gt;
-&lt;h6&gt;H6 Heading&lt;/h6&gt;
-				</code>
-			</pre>
-		</section>
-
-		<section>
-			<h1>Paragraph styles</h1>
-			<p>This is the <strong>strong tag</strong> in a paragraph.
-				This is the <em>em tag in a paragraph</em>, elements such
-				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an
-				example of the <abbr>abbreviation tag.</abbr> You'd use
-				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
-				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
-
-			<pre>
-				<code>
-&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
-				</code>
-			</pre>
-		</section>
-
-		<section>
-			<h2>Links</h2>
-			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in
-				context.</p>
-		</section>
-		<!-- Forms -->
-		<h1>Forms</h1>
-		<section id="forms">
-			<h2>Buttons</h2>
-
-			<p>This is your average button. You might want to click it.</p>
-
-			<p><button>Submit</button></p>
-
-			<pre>
-				<code>
-&lt;button&gt;Submit&lt;/button&gt;
-				</code>
-			</pre>
-
-			<p>These buttons have meaning. You might want to think twice before clicking.</p>
-			<!-- <p>Custimize buttons by adding CSS variables inline or with a class.</p> -->
-			<p>
-				<button class="danger">Delete</button>
-				<button class="warning">Warning</button>
-				<button class="success">Success!</button>
-			</p>
-
-			<pre>
-				<code>
-&lt;button 
-	class=&quot;delete&quot;
-&gt;Delete&lt;/button&gt;
-
-&lt;button 
-	class=&quot;warning&quot;
-&gt;Warning&lt;/button&gt;
-
-&lt;button 
-	class=&quot;success&quot;
-&gt;Go!&lt;/button&gt;
-				</code>
-			</pre>
-		</section>
-
-		<section>
-			<h2>Forms and controls</h2>
-			<form>
-				<label>
-					<span>Text:</span>
-					<input type="text" placeholder="What is your name?">
-				</label>
-
-				<label>
-					<span>Email:</span>
-					<input type="email" placeholder="What is your name?">
-				</label>
-
-				<label>
-					<span>Password:</span>
-					<input type="password" placeholder="What is your name?">
-				</label>
-
-				<label>
-					<span>Your comments</span>
-					<textarea placeholder="Your comment"></textarea>
-				</label>
-
-				<!-- Switch with Click -->
-				<div> Switches:
-					<label class="switch-v1">
-						<input type="checkbox">
-						<div></div>
-					</label>
-
-					<label class="switch-v2">
-						<input type="checkbox">
-						<div></div>
-					</label>
-
-					<label class="switch-v3">
-						<input type="checkbox" checked="checked">
-						<div></div>
-					</label>
+				<div id="total">
+					<!-- Total here -->
 				</div>
+			</section>
 
-				<div> Checkboxes:
-					<label class="checkbox-v1">
-						<input type="checkbox">
-						<span></span>
-					</label>
 
-					<label class="checkbox-v2">
-						<input type="checkbox">
-						<span></span>
-					</label>
 
-					<label class="checkbox-v3">
-						<input type="checkbox" checked="checked">
-						<span></span>
-					</label>
+			<!-- Contact form -->
+			<section id="contact">
+				<header>
+					<h1>Contact</h1>
+				</header>
+				<div>
+					<form>
+						<label>
+							name
+							<input type="text">
+						</label>
+						<label>
+							Subject
+							<input type="text">
+						</label>
+						<label>
+							Message
+							<textarea></textarea>
+						</label>
+						<button>Submit</button>
+					</form>
 				</div>
-
-				<div> Radio:
-					<label class="radio-v1">
-						<input type="radio" name="radio" checked>
-						<span></span>
-					</label>
-
-					<label class="radio-v2">
-						<input type="radio" name="radio">
-						<span></span>
-					</label>
-
-					<label class="radio-v3">
-						<input type="radio" name="radio">
-						<span></span>
-					</label>
-				</div>
-
-				<!-- Other Input Types -->
-				<div> Other Types:
-					<label>
-						<span>The Date</span>
-						<input type="date"></input>
-					</label>
-
-					<label>
-						<span>The Time</span>
-						<input type="time"></input>
-					</label>
-
-					<label>
-						<span>The Month</span>
-						<input type="month"></input>
-					</label>
-
-					<label>
-						<span>The Week</span>
-						<input type="week"></input>
-					</label>
-
-					<label>
-						<span>DateTime-Local</span>
-						<input type="datetime-local"></input>
-					</label>
-
-					<label>
-						<span>Favorite Color</span>
-						<input type="color"></input>
-					</label>
-
-					<label>
-						<span>Your File</span>
-						<input type="file"></input>
-					</label>
-
-					<label>
-						<span>what's the range?</span>
-						<input type="range"></input>
-					</label>
-
-					<label>
-						<span>Search Something Up</span>
-						<input type="search"></input>
-					</label>
-
-					<label>
-						<span>Your age</span>
-						<input type="number"></input>
-					</label>
-
-					<label>
-						<span>Valid Url</span>
-						<input type="url"></input>
-					</label>
-				</div>
-			</form>
-		</section>
+			</section>
 
 
-		<!-- Shapes -->
-		<section id="shapes">
-			<h1>Shapes</h1>
-			<p>These shapes are created using webcomponents,
-				these give us custom tags.</p>
-			<div>
-				<!-- 2D Shapes -->
-				<h3>2D Shape</h3>
-				<span class="flex">
-					<square-2d size="150"></square-2d>
-					<rectangle-2d size="150" color="green"></rectangle-2d>
-					<diamond-2d size="150" color="blue"></diamond-2d>
-					<parallelogram-2d size="150" color="yellow"></parallelogram-2d>
-					<triangle-2d size="150" color="black"></triangle-2d>
-					<scalene-2d size="150" color="orchid"></scalene-2d>
-					<right-2d size="150" color="pink"></right-2d>
-					<pentagon-2d size="150"></pentagon-2d>
-					<hexagon-2d size="150"></hexagon-2d>
-					<heptagon-2d size="150"></heptagon-2d>
-					<octagon-2d size="150"></octagon-2d>
-					<nonagon-2d size="150"></nonagon-2d>
-					<circle-2d size="150"></circle-2d>
-					<oval-2d size="150"></oval-2d>
-				</span>
 
-				<!-- Special Shapes -->
-				<h3>Special Shapes</h3>
-				<span class="flex">
-					<div class="heart"></div>
-					<div class="cross"></div>
-					<div class="arrow"></div>
-					<div class="star"></div>
-					<div class="crescent"></div>
-				</span>
+			<!-- Footer -->
+			<section id="footer">
+				<footer>
+					<ul>
 
-				<!-- 3D Shapes -->
-				<h3>3D Shapes</h3>
-				<span class="flex">
-					<div class="cube"></div>
-					<div class="cuboid"></div>
-					<div class="square-pyramid"></div>
-					<div class="triangular-prism"></div>
-					<div class="triangular-pyramid"></div>
-					<div class="cone"></div>
-					<div class="cylinder"></div>
-					<div class="torus"></div>
-					<div class="sphere"></div>
-				</span>
-			</div>
-		</section>
+					</ul>
+				</footer>
+			</section>
 
-		<section id="footers">
-			<h2>Page Footer</h2>
-			<div class="page-footer">
-				<ol>
-					<li>
-						<h3>Column 1</h3>
-					</li>
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
-				</ol>
+		</main>
 
-				<ol>
-					<li>
-						<h3>Column 2</h3>
-					</li>
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
-				</ol>
+		<style>
+			.swatch {
+				width: 100px;
+				height: 100px;
+				margin: 2px;
+				border-width: 2px;
+				border-style: dotted;
+				border-color: black;
+				border-radius: 32%;
+			}
 
-				<ol>
-					<li>
-						<h3>Column 3</h3>
-					</li>
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
-				</ol>
-			</div>
-		</section>
+			.swatches {
+				display: flex;
+				flex-wrap: wrap;
+			}
 
-		<!-- <section id="colors">
-			<h3>Full Color Palette</h3>
+			main {
+				width: 600px;
+				margin: auto
+			}
+		</style>
 
-			<div class="">
-				<h1>SASS to CSS Custom Properties</h1>
 
-				<p>This example uses SASS to generate a range of colors defined
-					as CSS Custom Properties. See: <code>lesson-06-example-2.scss</code>
-				</p>
+		<script>
+			
 
-				<p>Define some colors</p>
-				<p>Look at the dictionary of colors at the top of
-					<code>lesson-06-example-2.scss</code>. These are the base colors.
-					shown here. </p>
 
-				<div class="swatch-container">
-					<div class="swatch" style="background-color: var(--color-gray-lighter-4)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-lighter-3)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-lighter-2)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-lighter-1)"></div>
-					<div class="swatch" style="background-color: var(--color-gray)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-darker-1)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-darker-2)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-darker-3)"></div>
-					<div class="swatch" style="background-color: var(--color-gray-darker-4)"></div>
 
-					<div class="swatch" style="background-color: var(--color-info)"></div>
-					<div class="swatch" style="background-color: var(--color-success)"></div>
-					<div class="swatch" style="background-color: var(--color-danger)"></div>
-					<div class="swatch" style="background-color: var(--color-callout)"></div>
-					<div class="swatch" style="background-color: var(--color-secondary)"></div>
-					<div class="swatch" style="background-color: var(--color-other)"></div>
-					<div class="swatch" style="background-color: var(--color-alternate)"></div>
-					<div class="swatch" style="background-color: var(--color-primary)"></div>
-					<div class="swatch" style="background-color: var(--color-gray)"></div>
-				</div>
+			// make some swatches 
+			const swatchCount = 100
+			for (let i = 0; i < swatchCount; i += 1) {
+				const swatch = `<div class="swatch add-to-cart color-sample-${i}" data-color="Color ${i}" data-price="${(Math.random() * 10).toFixed(2)}"></div>`
+				document.querySelector('.swatches').innerHTML += swatch
+			}
 
-		</section> -->
-	</div>
-	<div class="page-footer">
-		<ul>
-			<li>
-				<h3>Content</h3>
-			</li>
-			<li><a href="#navbar">Navbar</a></li>
-			<li><a href="#fonts">Fonts</a></li>
-			<li><a href="#forms">Forms</a></li>
-			<li><a href="#shapes">Shapes</a></li>
-			<!-- <li><a href="#colors"></a></li> -->
-		</ul>
+      const addForm = document.getElementById('add-form')
+      const inputName = document.getElementById('name')
+      const inputPrice = document.getElementById('price')
+      const itemsList = document.getElementById('items')
+      const divTotal = document.getElementById('total')
 
-		<ul>
-			<li>
-				<h3>Resources</h3>
-			</li>
-			<li><a href="css-tricks.com/">CSS Tricks</a></li>
-			<li><a href="sass-lang.com">SCSS Lang</a></li>
-		</ul>
+			function handleClicks(e) {
+				if (e.target.matches('.swatch')) {
+					const color = e.target.dataset.color
+					const price = e.target.dataset.price
+					addToCart(color, price)
+				}
+			}
+			
+			document.querySelector('body').addEventListener('click', handleClicks)
 
-		<ul>
-			<li>
-				<h3>Contact</h3>
-			</li>
-			<li><a href="https://github.com/MakeMeSenpai/proto-styles">GitHub</a></li>
-		</ul>
-	</div>
+      const cart = []
 
-	<script type="module" src="./dist/shapes.js"></script>
-</body>
+      document.querySelector('body').addEventListener('submit', function(e){
+        e.preventDefault()
+        const name = inputName.value
+        const price = inputPrice.value
+        addToCart(name, price)
+        showCart()
+      })
 
+			document.querySelector('body').addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('remove')) {
+          console.log(e.target.dataset.name)
+          removeFromCart(e.target.dataset.name)
+        } else if (e.target && e.target.classList.contains('add-one')) {
+          addToCart(e.target.dataset.name)
+        } else if (e.target && e.target.classList.contains('remove-one')) {
+          removeFromCart(e.target.dataset.name, 1)
+        }
+			})
+
+      document.querySelector('body').addEventListener('input', function(e) {
+        if (e.target.matches('.update')) {
+          const qty = parseInt(e.target.value)
+          const name = e.target.dataset.name
+          updateCart(name, qty)
+        }
+      })
+
+      function addToCart(name, price) {
+        for (let i = 0; i < cart.length; i += 1) {
+          if (cart[i].name === name) {
+            cart[i].qty += 1
+            showCart()
+            return true
+          }
+        }
+        cart.push({ name, price, qty: 1})
+        showCart()
+      }
+
+      function removeFromCart(name, qty = 0) {
+        console.log(name, qty)
+        for (let i = 0; i < cart.length; i += 1) {
+          if (cart[i].name === name) {
+            if (qty) {
+              let newQty = cart[i].qty - qty
+              if (newQty > 0) {
+                cart[i].qty = newQty
+              } else {
+                cart.splice(i, 1)
+              }
+            } else {
+              cart.splice(i, 1)
+            }
+          }
+        }
+
+        showCart()
+      }
+
+      function showCart() {
+        let str = ''
+        for (let i = 0; i < cart.length; i += 1) {
+          str += `<li>
+            <span>
+              ${cart[i].name} 
+							<span>${cart[i].price}</span> each 
+              x <span>${cart[i].qty}</span> = 
+							<span>${(cart[i].qty * cart[i].price).toFixed(2)}<span>
+            </span>
+            <span>
+              <button class="remove danger" data-name="${cart[i].name}">remove</button>
+              <button class="add-one success" data-name="${cart[i].name}"> + </button>
+              <button class="remove-one warning" data-name="${cart[i].name}"> - </button>
+              <input class="update" data-name="${cart[i].name}" type="number" value="${cart[i].qty}">
+            </span>
+          </li>`
+        }
+        itemsList.innerHTML = str
+        divTotal.innerHTML = getTotal()
+      }
+
+      function getTotal() {
+        let total = 0
+        for (let i = 0; i < cart.length; i += 1) {
+          total += cart[i].price * cart[i].qty
+        }
+        return total.toFixed(2)
+      }
+
+      function updateCart(name, qty) {
+        for (let i = 0; i < cart.length; i += 1) {
+          if (cart[i].name === name) {
+            cart[i].qty = qty
+            showCart()
+            return true
+          }
+        }
+        return false
+      }
+
+      showCart()
+      getTotal()
+
+		</script>
+		
+	</body>
 </html>
