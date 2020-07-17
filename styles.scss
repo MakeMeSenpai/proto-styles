@@ -8,7 +8,7 @@ $color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
 // add tab title
 // html
 
-body {
+body { 
     &.light-mode {
         $color: black;
         color: $color;

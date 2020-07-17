@@ -5,13 +5,13 @@ body.light-mode {
 }
 
 body.lighter-mode {
-  color: #46002d;
-  background-color: #ff87ff;
+  color: #331c84;
+  background-color: white;
 }
 
 body.darker-mode {
-  color: #ff87ff;
-  background-color: #46002d;
+  color: white;
+  background-color: #331c84;
 }
 
 body.dark-mode {
@@ -65,7 +65,7 @@ body.dark-mode {
 }
 
 .card {
-  background-color: #ffa5ff;
+  background-color: white;
   display: inline-block;
   border: 2px solid black;
   margin-left: 7px;
@@ -84,7 +84,7 @@ body.dark-mode {
 
 /* Fonts */
 h6 {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -97,11 +97,11 @@ h6 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3ef357;
+  color: #516800;
   font-size: 26.5px;
   font-weight: 14.5px;
   text-decoration: overline;
-  text-decoration-color: #fcffff;
+  text-decoration-color: #ffffbe;
 }
 
 h6.title {
@@ -109,7 +109,7 @@ h6.title {
 }
 
 h5 {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -122,11 +122,11 @@ h5 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3ef357;
+  color: #516800;
   font-size: 29px;
   font-weight: 17px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: #ffffc3;
 }
 
 h5.title {
@@ -134,7 +134,7 @@ h5.title {
 }
 
 h4 {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -147,11 +147,11 @@ h4 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3ef357;
+  color: #516800;
   font-size: 32.75px;
   font-weight: 20.75px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: #ffffcb;
 }
 
 h4.title {
@@ -159,7 +159,7 @@ h4.title {
 }
 
 h3 {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -172,11 +172,11 @@ h3 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3ef357;
+  color: #516800;
   font-size: 39px;
   font-weight: 27px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: #ffffd7;
 }
 
 h3.title {
@@ -184,7 +184,7 @@ h3.title {
 }
 
 h2 {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -197,11 +197,11 @@ h2 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3ef357;
+  color: #516800;
   font-size: 51.5px;
   font-weight: 39.5px;
   text-decoration: overline;
-  text-decoration-color: white;
+  text-decoration-color: ivory;
 }
 
 h2.title {
@@ -209,7 +209,7 @@ h2.title {
 }
 
 h1 {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -222,7 +222,7 @@ h1 {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-style: oblique;
-  color: #3ef357;
+  color: #516800;
   font-size: 89px;
   font-weight: 77px;
   text-decoration: overline;
@@ -234,7 +234,7 @@ h1.title {
 }
 
 p {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -250,7 +250,7 @@ p {
 }
 
 strong {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -266,7 +266,7 @@ strong {
 }
 
 em {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -284,7 +284,7 @@ em {
 }
 
 ol {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -301,7 +301,7 @@ ol {
 }
 
 ul {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -323,11 +323,11 @@ abbr {
 
 abbr:hover {
   text-decoration: none;
-  color: #43002a;
+  color: #301981;
 }
 
 a {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -340,16 +340,16 @@ a {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   text-decoration: none;
-  color: #43002a;
+  color: #301981;
 }
 
 a:hover {
   text-decoration: double;
-  color: #ffa5ec;
+  color: #f2ffff;
 }
 
 code {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -362,8 +362,8 @@ code {
   text-underline-position: above;
   font-variant-east-asian: simplified;
   font-family: 'Courier New', Courier, monospace;
-  color: #ffa5ec;
-  background-color: #1c0003;
+  color: #f2ffff;
+  background-color: #09005a;
   display: inline-block;
   padding: 1em;
 }
@@ -373,12 +373,12 @@ form {
   padding: 1rem;
   align-items: center;
   border: 4px solid black;
-  color: #002700;
-  background-color: #ffd8ff;
+  color: black;
+  background-color: white;
 }
 
 button {
-  color: #c10ca8;
+  color: #ae97ff;
   font-size: 14px;
   font-weight: 2px;
   text-align: left;
@@ -392,24 +392,24 @@ button {
   font-variant-east-asian: simplified;
   border-width: 3px;
   border-color: cyan;
-  color: #3ef357;
-  background-color: #c10cff;
+  color: #516800;
+  background-color: #ae97ff;
   padding: 1em;
 }
 
 button.danger {
   border-color: lightcoral;
-  background-color: #ff0ca8;
+  background-color: #ff97ff;
 }
 
 button.warning {
   border-color: lightgoldenrodyellow;
-  background-color: #ffa2a8;
+  background-color: white;
 }
 
 button.success {
   border-color: lightgreen;
-  background-color: #c18ca8;
+  background-color: #aeffff;
 }
 
 input {
@@ -465,7 +465,7 @@ input[type=search]:focus {
 }
 
 input:focus {
-  border-color: #3ef357;
+  border-color: #516800;
 }
 
 textarea {
@@ -483,7 +483,7 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #3ef357;
+  border-color: #516800;
 }
 
 label.switch-v1 {
@@ -506,7 +506,7 @@ label.switch-v1 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #3ef357;
+  color: #516800;
   border: 1px solid black;
   background-color: #ab3600;
   border-radius: 34px;
@@ -515,7 +515,7 @@ label.switch-v1 span {
 
 label.switch-v1 div:hover,
 label.switch-v1 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.switch-v1 div:before,
@@ -570,7 +570,7 @@ label.checkbox-v1 span {
 
 label.checkbox-v1 div:hover,
 label.checkbox-v1 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.checkbox-v1 input:checked ~ div,
@@ -623,7 +623,7 @@ label.radio-v1 span {
 
 label.radio-v1 div:hover,
 label.radio-v1 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.radio-v1 input:checked ~ div,
@@ -673,7 +673,7 @@ label.switch-v2 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #3ef357;
+  color: #516800;
   border: 1px solid black;
   background-color: #cc0976;
   border-radius: 34px;
@@ -682,7 +682,7 @@ label.switch-v2 span {
 
 label.switch-v2 div:hover,
 label.switch-v2 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.switch-v2 div:before,
@@ -737,7 +737,7 @@ label.checkbox-v2 span {
 
 label.checkbox-v2 div:hover,
 label.checkbox-v2 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.checkbox-v2 input:checked ~ div,
@@ -790,7 +790,7 @@ label.radio-v2 span {
 
 label.radio-v2 div:hover,
 label.radio-v2 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.radio-v2 input:checked ~ div,
@@ -840,7 +840,7 @@ label.switch-v3 span {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #3ef357;
+  color: #516800;
   border: 1px solid black;
   background-color: #00c8a0;
   border-radius: 34px;
@@ -849,7 +849,7 @@ label.switch-v3 span {
 
 label.switch-v3 div:hover,
 label.switch-v3 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.switch-v3 div:before,
@@ -904,7 +904,7 @@ label.checkbox-v3 span {
 
 label.checkbox-v3 div:hover,
 label.checkbox-v3 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.checkbox-v3 input:checked ~ div,
@@ -950,7 +950,7 @@ label.radio-v3 span {
 
 label.radio-v3 div:hover,
 label.radio-v3 span:hover {
-  border: 1px solid #3ef357;
+  border: 1px solid #516800;
 }
 
 label.radio-v3 input:checked ~ div,
