@@ -32,7 +32,7 @@ body {
     }
 }
 
-.navbar {
+.navbar, nav {
     display: flex;
     margin: auto;
     justify-content: space-around;
@@ -90,22 +90,10 @@ body {
     }
 }
 
-//edited for card**************
 .flex {
-    margin-top: 15px;
-    margin-left: -350px;
-    margin-bottom: -5px;
     display: flex;
-    // flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-//edit for test *****
-@for $i from 1 through 100 {
-    .color-sample-#{$i} {
-        background-color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));// rgb($i * 2.55, $i * 2.55, $i * 2.55);
-    }
 }
 
 // add footer
@@ -555,3 +543,8 @@ label {
 }
 
 /* Misc. */
+// @for $i from 1 through 100 {
+//     .color-sample-#{$i} {
+//         background-color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));// rgb($i * 2.55, $i * 2.55, $i * 2.55);
+//     }
+// }
