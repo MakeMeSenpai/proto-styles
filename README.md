@@ -1,6 +1,10 @@
 # Proto-styles
 This is a scss made framework for easier and faster styling use. Code and decorate faster with this easy to use style
-sheet. As more progress is made, so will more documentation!
+sheet. As more progress is made, so will more documentation! This was the first implimentation of my usualy readme, so it's not the most organized. as well as my first framework!
+
+## How to use
+This framework unfortunately isn't server based. To use, you will clone the repo into your project folder, and simply link the library to your html file using `<link rel="stylesheet" href="./proto-styles/dist/styles.css" />` in your head.
+If you are using react. Clone the repo into your project folder, and following react.js syntax, use `import '../../proto-styles/dist/styles.css'` inside of your App.js file at the top of your file with the rest of the imports (which should be in project/src/Components/App.js).
 
 ## Index:
 1. [Checklist](#checklist)
